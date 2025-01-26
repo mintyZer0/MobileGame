@@ -1,0 +1,108 @@
+[gd_scene load_steps=11 format=4 uid="uid://bujtnql87nene"]
+
+[ext_resource type="Script" path="res://Scripts/wall.gd" id="1_xhvse"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_065bh"]
+size = Vector3(4.99743, 2.00053, 0.268555)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tpl3r"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_80qeq"]
+_surfaces = [{
+"aabb": AABB(-1, -1, 0.731119, 5, 2, 0.268881),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAADAAEAAAACAAMAAgAHAAMAAgAGAAcABgAFAAcABgAEAAUABAABAAUABAAAAAEAAgAEAAYAAgAAAAQABwABAAMABwAFAAEA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAAAAAAAAAAAAAAD//wAAAAD//wAA//8AAP///////wAA//8AAAAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_77mql"]
+resource_name = "Module1_Cube_014"
+_surfaces = [{
+"aabb": AABB(-1, -1, 0.731119, 5, 2, 0.268881),
+"attribute_data": PackedByteArray("/18AAP8f/z//X////58AAP/f/z//n////1//v/8f/3//X/+//5//v//f/3//n/+//1//P/9f/z//X/8//5//P/+f/z//n/8//1//f/9f/3//X/9//5//f/+f/3//n/9/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AgALAAUAAgAIAAsABgAVAAkABgASABUAFAARABcAFAAOABEADAADAA8ADAAAAAMABwANABMABwABAA0AFgAEAAoAFgAQAAQA"),
+"material": SubResource("StandardMaterial3D_tpl3r"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP///78AAAAA////vwAAAAD//1TVAAD//////78AAP///////wAA/////1TVAAAAAAAA//8AAAAAAAD/vwAAAAAAAFTVAAD//wAA//8AAP//AAD//wAA//8AAFTV//8AAP///7///wAA////v///AAD//1TV/////////7///////////////////1TV//8AAAAA/////wAAAAD/v///AAAAAFTV/////wAA////////AAD///////8AAFTV/////wAA/39U1VTV//////9//79U1VTV/7//vwAA/39U1VTV/7//v/9//79U1VTV/////wAA/3+qKqoq//////9//7+qKqoq/7//vwAA/3+qKqoq/7//v/9//7+qKqoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_80qeq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8lsu"]
+transparency = 1
+albedo_color = Color(0, 1, 1, 0.647059)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjpy0"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_57won"]
+_surfaces = [{
+"aabb": AABB(-1, -1, 0.731119, 5, 2, 0.268881),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAADAAEAAAACAAMAAgAHAAMAAgAGAAcABgAFAAcABgAEAAUABAABAAUABAAAAAEAAgAEAAYAAgAAAAQABwABAAMABwAFAAEA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAAAAAAAAAAAAAAD//wAAAAD//wAA//8AAP///////wAA//8AAAAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ordl0"]
+resource_name = "Module1_Cube_016"
+_surfaces = [{
+"aabb": AABB(-1, -1, 0.731119, 5, 2, 0.268881),
+"attribute_data": PackedByteArray("/18AAP8f/z//X////58AAP/f/z//n////1//v/8f/3//X/+//5//v//f/3//n/+//1//P/9f/z//X/8//5//P/+f/z//n/8//1//f/9f/3//X/9//5//f/+f/3//n/9/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AgALAAUAAgAIAAsABgAVAAkABgASABUAFAARABcAFAAOABEADAADAA8ADAAAAAMABwANABMABwABAA0AFgAEAAoAFgAQAAQA"),
+"material": SubResource("StandardMaterial3D_xjpy0"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP///78AAAAA////vwAAAAD//1TVAAD//////78AAP///////wAA/////1TVAAAAAAAA//8AAAAAAAD/vwAAAAAAAFTVAAD//wAA//8AAP//AAD//wAA//8AAFTV//8AAP///7///wAA////v///AAD//1TV/////////7///////////////////1TV//8AAAAA/////wAAAAD/v///AAAAAFTV/////wAA////////AAD///////8AAFTV/////wAA/39U1VTV//////9//79U1VTV/7//vwAA/39U1VTV/7//v/9//79U1VTV/////wAA/3+qKqoq//////9//7+qKqoq/7//vwAA/3+qKqoq/7//v/9//7+qKqoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_57won")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amc12"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 0.647059)
+
+[node name="Wall" type="Node3D"]
+script = ExtResource("1_xhvse")
+
+[node name="Detector" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Detector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49961, 2.00336, 0.974344)
+shape = SubResource("BoxShape3D_065bh")
+
+[node name="Buff" type="MeshInstance3D" parent="Detector"]
+transform = Transform3D(0.993757, 0, 0, 0, 0.993757, 0, 0, 0, 0.993757, 0.999478, 2.00298, 0.112397)
+visible = false
+mesh = SubResource("ArrayMesh_77mql")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_k8lsu")
+
+[node name="Debuff" type="MeshInstance3D" parent="Detector"]
+transform = Transform3D(0.999446, 0, 0, 0, 0.999446, 0, 0, 0, 0.999446, 0.999478, 2.00298, 0.112397)
+mesh = SubResource("ArrayMesh_ordl0")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_amc12")
+
+[node name="WallText" type="Label3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2.47303, 1.95048, 0.835407)
+text = "SOMETHING"
+font_size = 100
+outline_size = 30
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
