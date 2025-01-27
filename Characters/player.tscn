@@ -14,3 +14,6 @@ shape = SubResource("SphereShape3D_ds2md")
 
 [node name="Model" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_d5be1")
+
+[node name="Marker3D" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.146169, 0.98926, 0, -0.98926, 0.146169, -0.00835598, 0, -2.28249)
