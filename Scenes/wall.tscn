@@ -106,3 +106,4 @@ font_size = 100
 outline_size = 30
 
 [connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]

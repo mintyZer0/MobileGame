@@ -9,7 +9,7 @@ var negOp = ["-", "÷"]
 var numArr = [1, 2, 3, 4, 5] # Keeping this low for performance reasons. Probably need to lower it in the future too.
 var number 
 var operation
-var playerVal = 1
+
 
 func _ready() -> void:
 	if state:
@@ -22,22 +22,29 @@ func _ready() -> void:
 
 func _on_detector_body_entered(_body: Node3D) -> void:
 	num_effect()
+	if Global.playerVal <= 0:
+		get_tree().quit()
+	
 
 # playerVal keeps resetting back to 1 instead of retaining current value
 func num_effect():
 	match (operation):
 		"+":
-			playerVal += number
-			print(playerVal)
+			Global.playerVal += number
+			print(Global.playerVal)
+			#return playerVal
 		"-":
-			playerVal -= number
-			print(playerVal)
+			Global.playerVal -= number
+			print(Global.playerVal)
+			#return playerVal
 		"÷":
-			playerVal /= number
-			print(playerVal)
+			Global.playerVal /= number
+			print(Global.playerVal)
+			#return playerVal
 		"X":
-			playerVal *= number
-			print(playerVal)
+			Global.playerVal *= number
+			print(Global.playerVal)
+			#return playerVal
 		_:
 			print("Idk what to put here")
 
@@ -48,3 +55,7 @@ func color_picker():
 	else:
 		buff.visible = false
 		debuff.visible = true
+
+
+func _on_detector_body_exited(body: Node3D) -> void:
+	pass # Replace with function body.

@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/prototype.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://Scripts/global.gd"
+
 [dotnet]
 
 project/assembly_name="MobileGame"
