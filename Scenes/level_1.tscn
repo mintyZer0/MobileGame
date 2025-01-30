@@ -1,0 +1,39 @@
+[gd_scene load_steps=10 format=3 uid="uid://bwodonfmofxpj"]
+
+[ext_resource type="PackedScene" uid="uid://dhh1lxdcsxet8" path="res://Characters/player.tscn" id="1_3c3qq"]
+[ext_resource type="Script" path="res://Scripts/level.gd" id="2_b7wf7"]
+[ext_resource type="PackedScene" uid="uid://c07c4udpgdl4m" path="res://Scenes/free_mod_1.tscn" id="3_y3lgf"]
+[ext_resource type="PackedScene" uid="uid://cxgjnqp2qkay5" path="res://Scenes/free_mod_2.tscn" id="4_pijuh"]
+[ext_resource type="PackedScene" uid="uid://p25djxmw6arr" path="res://Scenes/free_mod_3.tscn" id="5_ar4lg"]
+[ext_resource type="PackedScene" uid="uid://dmd6cao2inrvn" path="res://Scenes/left_pos_mod.tscn" id="6_538nt"]
+[ext_resource type="PackedScene" uid="uid://r7sr40gwr4bg" path="res://Scenes/right_pos_mod.tscn" id="7_rqb6f"]
+
+[sub_resource type="Sky" id="Sky_p36qk"]
+
+[sub_resource type="Environment" id="Environment_drowd"]
+sky = SubResource("Sky_p36qk")
+volumetric_fog_density = 0.03
+
+[node name="Prototype" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_3c3qq")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.38233, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, -2.70962e-08, -1.25385e-08, 2.94181e-08, 0.822502, 0.568763, -5.09831e-09, -0.568763, 0.822502, 4.93889e-07, 4.22373, 7.31712)
+
+[node name="Level" type="Node3D" parent="."]
+script = ExtResource("2_b7wf7")
+modules = Array[PackedScene]([ExtResource("3_y3lgf"), ExtResource("4_pijuh"), ExtResource("5_ar4lg"), ExtResource("6_538nt"), ExtResource("7_rqb6f")])
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 7, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Level"]
+environment = SubResource("Environment_drowd")
+
+[node name="Player2" parent="." instance=ExtResource("1_3c3qq")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.59, 1.382, -1.161)
+
+[node name="Player3" parent="." instance=ExtResource("1_3c3qq")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.59, 1.382, -1.16075)

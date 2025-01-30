@@ -7,3 +7,6 @@ res://Scenes/right_pos_mod.tscn
 res://Scenes/free_mod_1.tscn
 res://Scenes/free_mod_2.tscn
 res://Scenes/free_mod_3.tscn
+res://Scenes/level_1.tscn
+res://Scripts/level.gd
+res://Scripts/player.gd

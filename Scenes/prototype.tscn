@@ -17,10 +17,10 @@ volumetric_fog_density = 0.03
 [node name="Prototype" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_j82ul")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.0203713, 1.01629, -0.0981416)
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.38233, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, -2.70961e-08, -1.25385e-08, 2.94181e-08, 0.822502, 0.568763, -5.09831e-09, -0.568763, 0.822502, 3.31178e-06, 8.37635, 39.3206)
+transform = Transform3D(1, -2.70962e-08, -1.25385e-08, 2.94181e-08, 0.822502, 0.568763, -5.09831e-09, -0.568763, 0.822502, 4.93889e-07, 4.22373, 7.31712)
 
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("2_si23d")
@@ -31,3 +31,9 @@ transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Level"]
 environment = SubResource("Environment_drowd")
+
+[node name="Player2" parent="." instance=ExtResource("1_j82ul")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.59, 1.382, -1.161)
+
+[node name="Player3" parent="." instance=ExtResource("1_j82ul")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.59, 1.382, -1.16075)

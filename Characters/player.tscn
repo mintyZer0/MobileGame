@@ -17,3 +17,8 @@ mesh = SubResource("SphereMesh_d5be1")
 
 [node name="Marker3D" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.146169, 0.98926, 0, -0.98926, 0.146169, -0.00835598, 0, -2.28249)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
