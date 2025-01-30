@@ -31,19 +31,19 @@ func num_effect():
 	match (operation):
 		"+":
 			Global.playerVal += number
-			print(Global.playerVal)
+			#print(Global.playerVal)
 			#return playerVal
 		"-":
 			Global.playerVal -= number
-			print(Global.playerVal)
+			#print(Global.playerVal)
 			#return playerVal
 		"÷":
 			Global.playerVal /= number
-			print(Global.playerVal)
+			#print(Global.playerVal)
 			#return playerVal
 		"X":
 			Global.playerVal *= number
-			print(Global.playerVal)
+			#print(Global.playerVal)
 			#return playerVal
 		_:
 			print("Idk what to put here")

@@ -20,7 +20,7 @@ volumetric_fog_density = 0.03
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.0203713, 1.01629, -0.0981416)
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 1.75089e-07, 1.87714, 3.37132)
+transform = Transform3D(1, -2.70961e-08, -1.25385e-08, 2.94181e-08, 0.822502, 0.568763, -5.09831e-09, -0.568763, 0.822502, 3.31178e-06, 8.37635, 39.3206)
 
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("2_si23d")
