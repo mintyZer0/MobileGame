@@ -13,7 +13,7 @@ func _ready():
 		spawnModule(n*offset)
 		print(n)
 		
-
+#Spawns empty module in the beginning so that you dont die immediately
 func spawnEmptyModule(n):
 	var empty_module = modules[0].instantiate()
 	print(n)

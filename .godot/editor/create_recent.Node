@@ -1,4 +1,6 @@
+HBoxContainer
 Label
+CanvasLayer
 Timer
 Marker3D
 CollisionShape3D

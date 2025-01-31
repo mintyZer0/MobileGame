@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b75lyaf325ajd"]
+[gd_scene load_steps=12 format=3 uid="uid://b75lyaf325ajd"]
 
 [ext_resource type="PackedScene" uid="uid://dhh1lxdcsxet8" path="res://Characters/player.tscn" id="1_j82ul"]
 [ext_resource type="Script" path="res://Scripts/prototype.gd" id="1_wn8lo"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cxgjnqp2qkay5" path="res://Scenes/free_mod_2.tscn" id="5_t13n8"]
 [ext_resource type="PackedScene" uid="uid://r7sr40gwr4bg" path="res://Scenes/right_pos_mod.tscn" id="6_geao1"]
 [ext_resource type="PackedScene" uid="uid://p25djxmw6arr" path="res://Scenes/free_mod_3.tscn" id="7_x75oa"]
+[ext_resource type="PackedScene" uid="uid://b83ay7rglp6pp" path="res://Scenes/hud.tscn" id="9_rcgvw"]
 
 [sub_resource type="Sky" id="Sky_p36qk"]
 
@@ -43,7 +44,4 @@ projInterval = 1.0
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.59, 1.382, -1.16075)
 projInterval = 1.0
 
-[node name="Label" type="Label" parent="."]
-offset_right = 38.0
-offset_bottom = 24.0
-theme_override_font_sizes/font_size = 40
+[node name="Hud" parent="." instance=ExtResource("9_rcgvw")]

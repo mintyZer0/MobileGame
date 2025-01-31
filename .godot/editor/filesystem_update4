@@ -8,6 +8,8 @@ res://Scenes/free_mod_1.tscn
 res://Scenes/free_mod_2.tscn
 res://Scenes/free_mod_3.tscn
 res://Scenes/level_1.tscn
-res://Scripts/player.gd
-res://Scripts/global.gd
 res://Scripts/prototype.gd
+res://Scripts/global.gd
+res://Scripts/player.gd
+res://Scripts/level.gd
+res://Scenes/hud.tscn
