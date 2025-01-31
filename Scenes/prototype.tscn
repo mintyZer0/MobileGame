@@ -33,12 +33,12 @@ environment = SubResource("Environment_drowd")
 [node name="Hud" parent="." instance=ExtResource("9_rcgvw")]
 
 [node name="Slime" parent="." instance=ExtResource("9_dfbyh")]
-transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 1.59, 1.382, -1.161)
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.989665, 1.382, -1.161)
 script = ExtResource("10_qif38")
 projInterval = 0.5
 
 [node name="Slime2" parent="." instance=ExtResource("9_dfbyh")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.59, 1.382, -1.16075)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.99, 1.382, -1.161)
 script = ExtResource("10_qif38")
 projInterval = 0.5
 
