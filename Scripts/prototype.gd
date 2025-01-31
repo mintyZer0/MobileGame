@@ -1,11 +1,13 @@
 extends Node3D
-@onready var txt = $"../Label"
+#Label for points that's on an Hbox container so that it scales on resolution size
+@onready var points = get_node("Hud/CanvasLayer/HBoxContainer/Points")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta: float) -> void:
-	txt.text = str(Global.points)
+	points.text = str(Global.points)
+	

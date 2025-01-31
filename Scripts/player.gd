@@ -17,7 +17,6 @@ var gameDone :bool
 func _ready() -> void:
 	while !gameDone:
 		_shoot_fireball()
-		Global.points += 1
 		await get_tree().create_timer(projInterval).timeout
 
 func _physics_process(delta: float) -> void:
