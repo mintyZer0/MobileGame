@@ -1,6 +1,7 @@
+res://Characters/slime.tscn
+res://Scenes/prototype.tscn
 res://Scenes/fireball.tscn
 res://Scenes/left_pos_mod.tscn
-res://Scenes/prototype.tscn
 res://Characters/player.tscn
 res://Scenes/wall.tscn
 res://Scenes/right_pos_mod.tscn
@@ -8,8 +9,5 @@ res://Scenes/free_mod_1.tscn
 res://Scenes/free_mod_2.tscn
 res://Scenes/free_mod_3.tscn
 res://Scenes/level_1.tscn
-res://Scripts/prototype.gd
-res://Scripts/global.gd
-res://Scripts/player.gd
-res://Scripts/level.gd
 res://Scenes/hud.tscn
+res://Scripts/level.gd
