@@ -9,16 +9,6 @@ const FIREBALL = preload("res://Scenes/fireball.tscn")
 #Slime Projectile Interval
 @export var projInterval = 0.5
 
-var gameDone :bool
-
-@onready var marker_3d = $Marker3D
-@onready var player = $"."
-
-func _ready() -> void:
-	while !gameDone:
-		_shoot_fireball()
-		await get_tree().create_timer(projInterval).timeout
-
 func _physics_process(delta: float) -> void:
 	Global.points += 1
 

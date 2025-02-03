@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpva4wk02nqe2"]
+
+[ext_resource type="PackedScene" uid="uid://dpak5rnp1tdch" path="res://Characters/slime.tscn" id="1_dfvb6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u52sq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_68lgp"]
+
+[node name="SlimeTest" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.961045, 0.276392, 0, -0.276392, 0.961045, 0, 1.72962, 1.91295)
+
+[node name="Slime" parent="." instance=ExtResource("1_dfvb6")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0.0341944, -0.892572)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 12.8904, 0, -1.50324, 0)
+shape = SubResource("BoxShape3D_u52sq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 12.8904, 0, -1.4955, 0)
+mesh = SubResource("BoxMesh_68lgp")
+skeleton = NodePath("")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 6, 0)
