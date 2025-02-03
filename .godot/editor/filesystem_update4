@@ -1,12 +1,4 @@
-res://Scenes/fireball.tscn
-res://Scenes/left_pos_mod.tscn
+res://Characters/slime_in_menu.tscn
+res://Scenes/the_menu.tscn
+res://Scenes/options_menu.tscn
 res://Scenes/prototype.tscn
-res://Characters/player.tscn
-res://Scenes/wall.tscn
-res://Scenes/right_pos_mod.tscn
-res://Scenes/free_mod_1.tscn
-res://Scenes/free_mod_2.tscn
-res://Scenes/free_mod_3.tscn
-res://Scenes/level_1.tscn
-res://Scripts/level.gd
-res://Scripts/player.gd

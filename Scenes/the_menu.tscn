@@ -1,0 +1,195 @@
+[gd_scene load_steps=9 format=3 uid="uid://c7qww5ejo1egg"]
+
+[ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Squidgy Slimes.ttf" id="1_8wxxc"]
+[ext_resource type="Script" path="res://Scripts/the_menu.gd" id="1_q7267"]
+[ext_resource type="PackedScene" uid="uid://cgoundoyfxpn8" path="res://Characters/slime_in_menu.tscn" id="2_7ws1x"]
+
+[sub_resource type="FontVariation" id="FontVariation_tk661"]
+base_font = ExtResource("1_8wxxc")
+
+[sub_resource type="FontVariation" id="FontVariation_7erxv"]
+base_font = ExtResource("1_8wxxc")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kfs5"]
+bg_color = Color(0.299547, 0.299547, 0.299547, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drl70"]
+bg_color = Color(0.489622, 0.489622, 0.489622, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qcypi"]
+bg_color = Color(0.20871, 0.20871, 0.20871, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[node name="The Menu" type="CanvasLayer"]
+script = ExtResource("1_q7267")
+
+[node name="Main Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 90
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main Menu/MarginContainer"]
+layout_mode = 2
+
+[node name="Game Title" type="Label" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = SubResource("FontVariation_tk661")
+theme_override_font_sizes/font_size = 100
+text = "Slime Game"
+
+[node name="MarginContainer" type="MarginContainer" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 50
+
+[node name="Start Button" type="Button" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_7erxv")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxFlat_4kfs5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_drl70")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qcypi")
+text = "Start Game"
+
+[node name="SelectCharButton" type="Button" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_7erxv")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxFlat_4kfs5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_drl70")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qcypi")
+text = "Select Slime"
+
+[node name="InfiniteStage" type="Button" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_7erxv")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxFlat_4kfs5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_drl70")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qcypi")
+text = "Infinite Stage"
+
+[node name="OptionsMenu" type="Button" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_7erxv")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxFlat_4kfs5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_drl70")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qcypi")
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="Main Menu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_7erxv")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxFlat_4kfs5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_drl70")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qcypi")
+text = "Quit"
+
+[node name="BackgroundNode" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="BackgroundNode"]
+transform = Transform3D(-4.22399e-08, -0.0420326, -0.999116, -1.12463e-08, 0.999116, -0.0420326, 1, 9.46088e-09, -4.26753e-08, -5, 3.01924, 0)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="BackgroundNode"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.4977, 0)
+operation = 2
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="BackgroundNode/CSGCombiner3D"]
+layers = 0
+flip_faces = true
+size = Vector3(8, 5, 16)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="BackgroundNode/CSGCombiner3D/CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.155, 0, 0)
+operation = 2
+size = Vector3(7.9, 4.9, 15.9)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="BackgroundNode"]
+transform = Transform3D(-4.37114e-08, 0.21644, -0.976296, 0, 0.976296, 0.21644, 1, 9.46088e-09, -4.26753e-08, -6.5, 4.85043, 0)
+
+[node name="SubViewport" type="SubViewport" parent="BackgroundNode"]
+
+[node name="SlimeInMenu" parent="BackgroundNode" instance=ExtResource("2_7ws1x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40376, 2.97842, 1.26609)
+collision_layer = 1
+collision_mask = 1
+
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/InfiniteStage" to="." method="_on_infinite_stage_pressed"]
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/OptionsMenu" to="." method="_on_options_menu_pressed"]
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
