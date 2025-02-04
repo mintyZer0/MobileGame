@@ -1,6 +1,8 @@
-res://Scenes/fireball.tscn
-res://Scenes/left_pos_mod.tscn
+res://Characters/slime_in_menu.tscn
+res://Scenes/the_menu.tscn
+res://Scenes/options_menu.tscn
 res://Scenes/prototype.tscn
+<<<<<<< HEAD
 res://Characters/player.tscn
 res://Scenes/wall.tscn
 res://Scenes/right_pos_mod.tscn
@@ -13,3 +15,5 @@ res://Scripts/global.gd
 res://Scripts/player.gd
 res://Scripts/level.gd
 res://Scenes/hud.tscn
+=======
+>>>>>>> ryu
