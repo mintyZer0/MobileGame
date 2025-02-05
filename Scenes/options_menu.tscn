@@ -1,0 +1,225 @@
+[gd_scene load_steps=14 format=3 uid="uid://drwgqchmaaisi"]
+
+[ext_resource type="PackedScene" uid="uid://br5b7pma7l3nc" path="res://Scenes/volume_slider.tscn" id="2_ash2g"]
+[ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Squidgy Slimes.ttf" id="2_xvlm0"]
+
+[sub_resource type="GDScript" id="GDScript_yudnr"]
+script/source = "extends CanvasLayer
+var openReturnPauseInMenu = false
+var master_bus = AudioServer.get_bus_index(\"Master\")
+
+func _ready() -> void:	
+	AudioServer.set_bus_mute(master_bus, Global.isMuted)
+	$Options/MarginContainer/VBoxContainer/VBoxContainer/MuteButton.button_pressed = Global.isMuted
+	
+	$Options/MarginContainer/VBoxContainer/VBoxContainer/ReturntoGameButton.visible = openReturnPauseInMenu
+
+
+func _on_mute_button_toggled(toggled_on: bool) -> void:
+	Global.isMuted = toggled_on
+	AudioServer.set_bus_mute(master_bus, toggled_on)
+
+func _on_go_back_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Scenes/the_menu.tscn\")
+
+func _on_returnto_game_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Scenes/prototype.tscn\")
+	get_tree().paused = true
+"
+
+[sub_resource type="FontVariation" id="FontVariation_mb7mq"]
+base_font = ExtResource("2_xvlm0")
+
+[sub_resource type="FontVariation" id="FontVariation_id7mt"]
+base_font = ExtResource("2_xvlm0")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2b06"]
+bg_color = Color(0.299547, 0.299547, 0.299547, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[sub_resource type="FontVariation" id="FontVariation_l3yy1"]
+base_font = ExtResource("2_xvlm0")
+
+[sub_resource type="FontVariation" id="FontVariation_nuai0"]
+base_font = ExtResource("2_xvlm0")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3g5fe"]
+bg_color = Color(0.299547, 0.299547, 0.299547, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eykpm"]
+bg_color = Color(0.299547, 0.299547, 0.299547, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jasky"]
+bg_color = Color(0.299547, 0.299547, 0.299547, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhfyy"]
+bg_color = Color(0.299547, 0.299547, 0.299547, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_co2qo"]
+bg_color = Color(0.299547, 0.299547, 0.299547, 1)
+skew = Vector2(0.3, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+shadow_size = 5
+
+[node name="OptionsMenu" type="CanvasLayer"]
+script = SubResource("GDScript_yudnr")
+
+[node name="Options" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Options"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options/MarginContainer"]
+layout_mode = 2
+
+[node name="Options" type="Label" parent="Options/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = SubResource("FontVariation_mb7mq")
+theme_override_font_sizes/font_size = 50
+text = "Settings"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 11
+
+[node name="ReturntoGameButton" type="Button" parent="Options/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_id7mt")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_u2b06")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u2b06")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u2b06")
+text = "Return to Game"
+
+[node name="VolumeLabel" type="Label" parent="Options/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = SubResource("FontVariation_l3yy1")
+theme_override_font_sizes/font_size = 40
+text = "Volume"
+
+[node name="Master" parent="Options/MarginContainer/VBoxContainer/VBoxContainer" instance=ExtResource("2_ash2g")]
+layout_mode = 2
+bus_name = "Master"
+
+[node name="MuteLabel" type="Label" parent="Options/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_xvlm0")
+theme_override_font_sizes/font_size = 40
+text = "Mute"
+
+[node name="MuteButton" type="CheckButton" parent="Options/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+keep_pressed_outside = true
+
+[node name="RemoveAdButton" type="Button" parent="Options/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_nuai0")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_u2b06")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3g5fe")
+theme_override_styles/normal = SubResource("StyleBoxFlat_eykpm")
+text = "Remove Ads"
+
+[node name="GoBackButton" type="Button" parent="Options/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_xvlm0")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_jasky")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lhfyy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_co2qo")
+text = "Return to Main Menu"
+
+[connection signal="pressed" from="Options/MarginContainer/VBoxContainer/VBoxContainer/ReturntoGameButton" to="." method="_on_returnto_game_button_pressed"]
+[connection signal="toggled" from="Options/MarginContainer/VBoxContainer/VBoxContainer/MuteButton" to="." method="_on_mute_button_toggled"]
+[connection signal="pressed" from="Options/MarginContainer/VBoxContainer/VBoxContainer/GoBackButton" to="." method="_on_go_back_button_pressed"]

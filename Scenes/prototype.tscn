@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dpak5rnp1tdch" path="res://Characters/slime.tscn" id="9_dfbyh"]
 [ext_resource type="PackedScene" uid="uid://b83ay7rglp6pp" path="res://Scenes/hud.tscn" id="9_rcgvw"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="10_qif38"]
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="8_htlo7"]
 
 [sub_resource type="Sky" id="Sky_p36qk"]
 
@@ -49,3 +50,68 @@ projInterval = 0.5
 
 [node name="Camera3D" type="Camera3D" parent="Slime3"]
 transform = Transform3D(1, 0, 0, 0, 0.822144, 0.56928, 0, -0.56928, 0.822144, -8.95915e-07, 2.57098, 4.29455)
+
+[node name="SubViewport" type="SubViewport" parent="."]
+
+[node name="PauseCanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("8_htlo7")
+
+[node name="PauseMenu" type="Control" parent="PauseCanvasLayer"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="PauseCanvasLayer/PauseMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -126.0
+offset_top = -107.0
+offset_right = 126.0
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseCanvasLayer/PauseMenu/PanelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="PauseLabel" type="Label" parent="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "You Paused the Game!"
+horizontal_alignment = 1
+
+[node name="Resume" type="Button" parent="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Resume"
+
+[node name="Restart" type="Button" parent="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Restart"
+
+[node name="Quit" type="Button" parent="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Quit"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseCanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PauseButton" type="Button" parent="PauseCanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Pause"
+
+[connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Resume" to="PauseCanvasLayer" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Restart" to="PauseCanvasLayer" method="_on_restart_pressed"]
+[connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Quit" to="PauseCanvasLayer" method="_on_quit_pressed"]
+[connection signal="pressed" from="PauseCanvasLayer/VBoxContainer/PauseButton" to="PauseCanvasLayer" method="_on_pause_button_pressed"]

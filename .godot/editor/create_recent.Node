@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 CharacterBody3D
+=======
+<<<<<<< HEAD
+>>>>>>> main
 HBoxContainer
 Label
 CanvasLayer
@@ -8,3 +12,19 @@ CollisionShape3D
 MeshInstance3D
 Area3D
 Node3D
+=======
+Button
+VBoxContainer
+PanelContainer
+Label
+Control
+CanvasModulate
+CanvasLayer
+ColorRect
+AnimationPlayer
+MarginContainer
+SubViewport
+AudioStreamPlayer
+HSlider
+AudioStreamPlayer2D
+>>>>>>> ryu

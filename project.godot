@@ -18,10 +18,15 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://Scripts/global.gd"
+GlobalAudioStreamPlayer="*res://Scenes/audio_stream_player.tscn"
 
 [dotnet]
 
 project/assembly_name="MobileGame"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [input]
 
