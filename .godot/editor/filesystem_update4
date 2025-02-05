@@ -1,19 +1,16 @@
-res://Characters/slime_in_menu.tscn
-res://Scenes/the_menu.tscn
-res://Scenes/options_menu.tscn
 res://Scenes/prototype.tscn
-<<<<<<< HEAD
-res://Characters/player.tscn
-res://Scenes/wall.tscn
-res://Scenes/right_pos_mod.tscn
-res://Scenes/free_mod_1.tscn
-res://Scenes/free_mod_2.tscn
-res://Scenes/free_mod_3.tscn
-res://Scenes/level_1.tscn
-res://Scripts/prototype.gd
-res://Scripts/global.gd
-res://Scripts/player.gd
 res://Scripts/level.gd
+res://Scenes/volume_slider.tscn
+res://Scenes/the_menu.tscn
+res://Scenes/slimetest.tscn
+res://Scenes/free_mod_1.tscn
+res://Scenes/right_pos_mod.tscn
+res://Characters/slime.tscn
+res://Scenes/audio_stream_player.tscn
+res://Scenes/level_1.tscn
 res://Scenes/hud.tscn
-=======
->>>>>>> ryu
+res://Scenes/left_pos_mod.tscn
+res://Scripts/audio_stream_player.gd
+res://Audio/audio_manager.tscn
+res://Scripts/audio_manager.gd
+res://Scenes/fireball.tscn
