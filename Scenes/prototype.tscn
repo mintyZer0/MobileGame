@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b75lyaf325ajd"]
+[gd_scene load_steps=14 format=3 uid="uid://b75lyaf325ajd"]
 
 [ext_resource type="Script" path="res://Scripts/prototype.gd" id="1_wn8lo"]
 [ext_resource type="Script" path="res://Scripts/level.gd" id="2_si23d"]
@@ -7,10 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://cxgjnqp2qkay5" path="res://Scenes/free_mod_2.tscn" id="5_t13n8"]
 [ext_resource type="PackedScene" uid="uid://r7sr40gwr4bg" path="res://Scenes/right_pos_mod.tscn" id="6_geao1"]
 [ext_resource type="PackedScene" uid="uid://p25djxmw6arr" path="res://Scenes/free_mod_3.tscn" id="7_x75oa"]
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="8_htlo7"]
 [ext_resource type="PackedScene" uid="uid://dpak5rnp1tdch" path="res://Characters/slime.tscn" id="9_dfbyh"]
 [ext_resource type="PackedScene" uid="uid://b83ay7rglp6pp" path="res://Scenes/hud.tscn" id="9_rcgvw"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="10_qif38"]
-[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="8_htlo7"]
 
 [sub_resource type="Sky" id="Sky_p36qk"]
 
