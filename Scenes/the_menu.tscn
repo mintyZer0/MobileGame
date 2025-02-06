@@ -190,6 +190,7 @@ collision_layer = 1
 collision_mask = 1
 
 [connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/SelectCharButton" to="." method="_on_select_char_button_pressed"]
 [connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/InfiniteStage" to="." method="_on_infinite_stage_pressed"]
 [connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/OptionsMenu" to="." method="_on_options_menu_pressed"]
 [connection signal="pressed" from="Main Menu/MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
