@@ -128,6 +128,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_spmqs")
 
 [node name="IceSlime" type="Node3D"]
+transform = Transform3D(-4.39916e-08, 0, 1.00641, 0, 1.00641, 0, -1.00641, 0, -4.39916e-08, 0, 0, 0)
 
 [node name="IceSlime" type="Node3D" parent="."]
 

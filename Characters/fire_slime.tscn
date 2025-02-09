@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://bsxie3bu0s04p"]
+[gd_scene load_steps=18 format=4 uid="uid://bsxie3bu0s04p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4j3ya"]
 resource_name = "Body"
@@ -16,7 +16,7 @@ cull_mode = 2
 albedo_color = Color(0.575948, 0.147498, 0.103031, 1)
 roughness = 0.5
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_7oiiq"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ci1i6"]
 _surfaces = [{
 "aabb": AABB(-1.36448, -0.574759, -1.36448, 2.72896, 1.83892, 2.72896),
 "format": 34359742465,
@@ -92,7 +92,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("mjWEatLpVpyaNYRq0ukUzpo1hGrS6XTgPTBV5rKTscs9MFXmspPi9D0wVeayk/vdSTdaFPZtn7VJN1oU9m3J70k3WhT2bef37DErkNYX3/7sMSuQ1hd08ewxK5DWF9joEs7TbyjoJL0SztNvKOganRLO028o6DO/tcik6wiSUfq1yKTrCJLdzLXIpOsIku/Owc+pGUxsV9vBz6kZTGxMt8HPqRlMbJfFZMp6lSwWufRkynqVLBZm72TKepUsFjvcVCZJMYK1HbVUJkkxgrVunFQmSTGCtfPzVCZJMYK1kOQIIkmxg8xtyAgiSbGDzKrHCCJJsYPMYtwIIkmxg8wZ2skfPMiDTD3zyR88yINM6fHJHzzIg0xH68kfPMiDTBnaFSQ9SIM1+PEVJD1IgzXk/xUkPUiDNfPzFSQ9SIM1eeZLhAAA/2h/3EuEAAD/aBq2S4QAAP9ohLZLhAAA/2im7cB98pYAAC7zwH3ylgAAbe/AffKWAADk/8B98pYAAD3z9t21Tnszb+/23bVOezN/3PbdtU57M0Ta9t21Tnszq8Q14MI3e7NUnjXgwjd7sxq2NeDCN3uzn7s14MI3e7PExqrZtc58Ss72qtm1znxKT/aq2bXOfErM0arZtc58SkTa6dvBt3vKJsjp28G3e8pouOnbwbd7yjfM6dvBt3vKn7s+ggxp///owT6CDGn//6qcPoIMaf//bpw+ggxp//9tyLN7////ls72s3v///+WJsize////5bMz7N7////luP3AACKe2WBKfEAAIp7ZYF04AAAintlgdjoAACKe2WBa9dpgak3BBhm72mBqTcEGG7daYGpNwQYye9pgak3BBgE////dISZfu/O//90hJl++9j//3SEmX5Duf//dISZfpfFlX5VyPrn4cSVflXI+uckvZV+Vcj6527ElX5VyPrnscuAhA0YTMganYCEDRhMyJK1gIQNGEzIn7WAhA0YTMgwnX578eeyN1X0fnvx57I3ufR+e/HnsjeL9H578eeyN+L0OymmsFb+oxn85v3Z2OzdKsR2t8Mw9R7DOR9CkRhQVlDd3yzTukFBT9V/POH+3+bErOAiAN4msUp2L+8gC0JOCwLUTBFiQyUOV0ZnSOEO4FliP44vAl7yAjtG1DmpP7Qk/B3Bl9IteaO/3JvVhunR2M3/1uTH7uQtZuQv2+zwVMRIeU7bv3qoxo7jzMLs8FTEWVPETTbLtcW/3JvVctz9xo1LnkXYFe5aaCAPi8tM8VI4odcCtEE3PTbLtcVIeU7bs0qCNo1LnkXCRFMhK0WOLWEfjEbYFe5agDQdHw46ZTE1RcsGVllMCC0/XBHCRFMhdNTWFHjfIgIQSJEKgDQdH2odrgHjL69P0i15o83/1uQ1RcsGdNTWFA/rEigMc/bAh9pW1/zm/dn+3+bE6u0vxTtG1DkjT7NDGFBWUF3Ig8hiQyUOpUjAHnQ4rx1iP44vydR0F6zgIgBi/jbk2OzdKt4msUoJG7dbOR9CkTsy+ZydR14DAl7yAhF1ftfEdrfD")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_7oiiq")
+shadow_mesh = SubResource("ArrayMesh_ci1i6")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u233d"]
 transparency = 1
@@ -120,7 +120,7 @@ emission = Color(0.941176, 0.12549, 0, 1)
 offsets = PackedFloat32Array(0, 0.5)
 colors = PackedColorArray(1, 0.678431, 0, 1, 0.765778, 0.139115, 2.88785e-07, 1)
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_sj4t5"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bj35o"]
 gradient = SubResource("Gradient_dqa4c")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_14w6u"]
@@ -135,13 +135,16 @@ spread = 0.0
 initial_velocity_min = 0.5
 initial_velocity_max = 0.5
 gravity = Vector3(0, 0, 0)
-scale_min = 0.5
-scale_max = 0.75
+scale_min = 0.2
+scale_max = 0.4
 scale_over_velocity_min = 0.5
 scale_over_velocity_max = 1.0
-color_ramp = SubResource("GradientTexture1D_sj4t5")
+color_ramp = SubResource("GradientTexture1D_bj35o")
+turbulence_noise_speed = Vector3(0, 1, 0)
+turbulence_influence_min = 0.567
+turbulence_influence_max = 0.567
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ehxgf"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grkfr"]
 transparency = 1
 shading_mode = 0
 vertex_color_use_as_albedo = true
@@ -149,10 +152,29 @@ albedo_color = Color(1, 1, 1, 0.54902)
 
 [sub_resource type="SphereMesh" id="SphereMesh_2w35x"]
 lightmap_size_hint = Vector2i(9, 5)
-material = SubResource("StandardMaterial3D_ehxgf")
+material = SubResource("StandardMaterial3D_grkfr")
 flip_faces = true
 radius = 0.25
 height = 0.5
+radial_segments = 6
+rings = 5
+
+[sub_resource type="Skin" id="Skin_86t60"]
+
+[sub_resource type="Animation" id="Animation_dqus2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FireSlime:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_086db"]
 resource_name = "idle"
@@ -171,21 +193,6 @@ tracks/0/keys = {
 "values": [Vector3(1, 1, 1), Vector3(1, 0.757562, 1), Vector3(1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_dqus2"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("FireSlime:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(1, 1, 1)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3mg7d"]
 _data = {
 "RESET": SubResource("Animation_dqus2"),
@@ -193,7 +200,7 @@ _data = {
 }
 
 [node name="FireSlime" type="Node3D"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 0, 0, 0)
 
 [node name="FireSlime" type="Node3D" parent="."]
 
@@ -212,6 +219,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36135, -0.00416911)
 amount = 50
 process_material = SubResource("ParticleProcessMaterial_14w6u")
 draw_pass_1 = SubResource("SphereMesh_2w35x")
+draw_skin = SubResource("Skin_86t60")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
