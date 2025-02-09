@@ -1,5 +1,6 @@
-extends Timer
+extends Node
 
+@onready var main_menu_default_music: AudioStreamPlayer = $MainMenuDefaultMusic
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

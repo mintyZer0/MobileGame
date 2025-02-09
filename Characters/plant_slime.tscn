@@ -1,4 +1,8 @@
+
 [gd_scene load_steps=14 format=4 uid="uid://c4btmkcs0oiia"]
+
+[ext_resource type="Script" path="res://Scripts/selection_area.gd" id="1_8n0w7"]
+
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60amq"]
 resource_name = "Black"
@@ -185,15 +189,17 @@ tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
+
 "values": [Vector3(1, 1, 1), Vector3(1, 0.75078, 1), Vector3(1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_3wdgq"]
 resource_name = "forward"
 length = 1.5
+
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -202,10 +208,12 @@ tracks/0/path = NodePath("GrassSlime:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
+
 "times": PackedFloat32Array(0, 0.3, 0.6, 1.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector3(0.000148356, 1.5708, 0.000148356), Vector3(0.000148334, 1.5708, 0.523747), Vector3(0.000148386, 1.5708, -0.65435), Vector3(0, 1.5708, -0.654498)]
+
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_shfsl"]
@@ -214,6 +222,15 @@ _data = {
 "forward": SubResource("Animation_3wdgq"),
 "idle": SubResource("Animation_8vvnv")
 }
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1n7r1"]
+radius = 0.9
+
+[sub_resource type="TorusMesh" id="TorusMesh_dyhfu"]
+inner_radius = 0.95
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dt5va"]
+albedo_color = Color(0.589622, 0.754258, 0.404005, 1)
 
 [node name="PlantSlime" type="Node3D"]
 transform = Transform3D(1, -0.000148356, 0, 0.000148356, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -227,12 +244,31 @@ mesh = SubResource("ArrayMesh_0mtt4")
 skeleton = NodePath("")
 surface_material_override/1 = SubResource("StandardMaterial3D_62ehb")
 
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="GrassSlime/Plant"]
 mesh = SubResource("ArrayMesh_ismup")
 surface_material_override/0 = SubResource("StandardMaterial3D_ur36b")
+
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_shfsl")
 }
+
 autoplay = "forward"
+
+[node name="SelectionArea" type="Area3D" parent="."]
+script = ExtResource("1_8n0w7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SelectionArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.862646, 0)
+shape = SubResource("CapsuleShape3D_1n7r1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SelectionArea"]
+transform = Transform3D(1.755, 0, 0, 0, 1.755, 0, 0, 0, 1.755, 0, 0, 0)
+mesh = SubResource("TorusMesh_dyhfu")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dt5va")
+
+[connection signal="input_event" from="SelectionArea" to="SelectionArea" method="_on_input_event"]
+

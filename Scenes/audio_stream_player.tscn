@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw6vr1oxqpr2r"]
+
+[ext_resource type="AudioStream" uid="uid://c3qdq66qnyfhy" path="res://Audio/Music/LEASE.mp3" id="1_woph5"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_woph5")
+autoplay = true
+parameters/looping = true

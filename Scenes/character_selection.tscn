@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://bacgjqtl6g1l7"]
+
+[ext_resource type="PackedScene" uid="uid://bsxie3bu0s04p" path="res://Characters/fire_slime.tscn" id="1_chcxy"]
+[ext_resource type="PackedScene" uid="uid://c22dayuenbfui" path="res://Characters/ice_slime.tscn" id="2_cp211"]
+[ext_resource type="PackedScene" uid="uid://c8fielxs15adg" path="res://Characters/neutral_slime.tscn" id="3_n0xpf"]
+[ext_resource type="PackedScene" uid="uid://c4btmkcs0oiia" path="res://Characters/plant_slime.tscn" id="4_ajjsk"]
+
+[sub_resource type="Environment" id="Environment_0ubjs"]
+sdfgi_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.577008, 0.577008, 0.577008, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c008u"]
+
+[node name="CharacterSelection" type="Node3D"]
+
+[node name="Characters" type="Node" parent="."]
+
+[node name="FireSlime" parent="Characters" instance=ExtResource("1_chcxy")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.71422, 0, 0)
+
+[node name="IceSlime" parent="Characters" instance=ExtResource("2_cp211")]
+transform = Transform3D(-2.81938e-08, 0, -0.645, 0, 0.645, 0, 0.645, 0, -2.81938e-08, 5.47385, 0, 0)
+
+[node name="NeutralSlime" parent="Characters" instance=ExtResource("3_n0xpf")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.12778, 0, 0)
+
+[node name="PlantSlime" parent="Characters" instance=ExtResource("4_ajjsk")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.20554, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15039, 9.09577)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0ubjs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("PlaneMesh_c008u")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.72733, 0.686288, 0, -0.686288, 0.72733, 0, 6.01388, 10.149)
