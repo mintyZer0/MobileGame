@@ -103,7 +103,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":536,
+			"count":441,
 			"max":[
 				0.8015922904014587,
 				1.5350748300552368,
@@ -119,19 +119,19 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":536,
+			"count":441,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":536,
+			"count":441,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5126,
-			"count":536,
+			"count":441,
 			"type":"VEC4"
 		},
 		{
@@ -224,98 +224,98 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":6432,
+			"byteLength":5292,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":6432,
-			"byteOffset":6432,
+			"byteLength":5292,
+			"byteOffset":5292,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":4288,
-			"byteOffset":12864,
+			"byteLength":3528,
+			"byteOffset":10584,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":8576,
-			"byteOffset":17152,
+			"byteLength":7056,
+			"byteOffset":14112,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":4608,
-			"byteOffset":25728,
+			"byteOffset":21168,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":3000,
-			"byteOffset":30336,
+			"byteOffset":25776,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":3000,
-			"byteOffset":33336,
+			"byteOffset":28776,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":2000,
-			"byteOffset":36336,
+			"byteOffset":31776,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":4000,
-			"byteOffset":38336,
+			"byteOffset":33776,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":2304,
-			"byteOffset":42336,
+			"byteOffset":37776,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":684,
-			"byteOffset":44640,
+			"byteOffset":40080,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":684,
-			"byteOffset":45324,
+			"byteOffset":40764,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":456,
-			"byteOffset":46008,
+			"byteOffset":41448,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":912,
-			"byteOffset":46464,
+			"byteOffset":41904,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":384,
-			"byteOffset":47376,
+			"byteOffset":42816,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":47760,
+			"byteLength":43200,
 			"uri":"PlantSlime-75b668aa7991a737b55f994bd2172afa.bin"
 		}
 	]
