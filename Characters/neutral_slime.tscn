@@ -168,6 +168,7 @@ inner_radius = 0.95
 albedo_color = Color(0.808787, 0.827368, 0.81775, 1)
 
 [node name="NeutralSlime" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="NeutralSlime" type="Node3D" parent="."]
 
