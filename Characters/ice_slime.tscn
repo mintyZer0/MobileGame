@@ -139,6 +139,7 @@ inner_radius = 0.95
 albedo_color = Color(0.371198, 0.753178, 0.846255, 1)
 
 [node name="IceSlime" type="Node3D"]
+transform = Transform3D(-4.39916e-08, 0, 1.00641, 0, 1.00641, 0, -1.00641, 0, -4.39916e-08, 0, 0, 0)
 
 [node name="IceSlime" type="Node3D" parent="."]
 
