@@ -23,7 +23,7 @@ script = ExtResource("1_wn8lo")
 
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("2_si23d")
-modules = Array[PackedScene]([ExtResource("4_b6emq"), ExtResource("5_t13n8"), ExtResource("7_x75oa"), ExtResource("3_dkltt"), ExtResource("6_geao1")])
+modules = Array[PackedScene]([ExtResource("4_1wepn"), ExtResource("5_5ntsu"), ExtResource("6_dyojs")])
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Level"]
 transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 7, 0)

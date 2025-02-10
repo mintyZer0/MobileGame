@@ -20,7 +20,7 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Body",
+			"name":"Slime",
 			"translation":[
 				0,
 				0.5863903164863586,
@@ -29,7 +29,7 @@
 		},
 		{
 			"mesh":1,
-			"name":"Sphere",
+			"name":"Fire",
 			"scale":[
 				1.4597113132476807,
 				0.9701371788978577,
@@ -43,6 +43,94 @@
 		},
 		{
 			"name":"EMP-displace"
+		}
+	],
+	"animations":[
+		{
+			"channels":[
+				{
+					"sampler":0,
+					"target":{
+						"node":1,
+						"path":"translation"
+					}
+				},
+				{
+					"sampler":1,
+					"target":{
+						"node":1,
+						"path":"rotation"
+					}
+				},
+				{
+					"sampler":2,
+					"target":{
+						"node":1,
+						"path":"scale"
+					}
+				}
+			],
+			"name":"Idle",
+			"samplers":[
+				{
+					"input":17,
+					"interpolation":"STEP",
+					"output":18
+				},
+				{
+					"input":19,
+					"interpolation":"LINEAR",
+					"output":20
+				},
+				{
+					"input":17,
+					"interpolation":"STEP",
+					"output":21
+				}
+			]
+		},
+		{
+			"channels":[
+				{
+					"sampler":0,
+					"target":{
+						"node":2,
+						"path":"translation"
+					}
+				},
+				{
+					"sampler":1,
+					"target":{
+						"node":2,
+						"path":"rotation"
+					}
+				},
+				{
+					"sampler":2,
+					"target":{
+						"node":2,
+						"path":"scale"
+					}
+				}
+			],
+			"name":"EMP-displaceAction",
+			"samplers":[
+				{
+					"input":22,
+					"interpolation":"LINEAR",
+					"output":23
+				},
+				{
+					"input":24,
+					"interpolation":"STEP",
+					"output":25
+				},
+				{
+					"input":24,
+					"interpolation":"STEP",
+					"output":26
+				}
+			]
 		}
 	],
 	"materials":[
@@ -258,14 +346,14 @@
 			"componentType":5126,
 			"count":7801,
 			"max":[
-				1.046347975730896,
-				2.1541740894317627,
-				0.9612770080566406
+				0.9707019329071045,
+				2.0565056800842285,
+				0.9884079694747925
 			],
 			"min":[
-				-0.9470825791358948,
-				-0.6647031307220459,
-				-0.9556064009666443
+				-0.9777371883392334,
+				-0.6315372586250305,
+				-0.9786524176597595
 			],
 			"type":"VEC3"
 		},
@@ -292,6 +380,90 @@
 			"componentType":5123,
 			"count":45312,
 			"type":"SCALAR"
+		},
+		{
+			"bufferView":17,
+			"componentType":5126,
+			"count":2,
+			"max":[
+				1.6666666666666667
+			],
+			"min":[
+				0.041666666666666664
+			],
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":18,
+			"componentType":5126,
+			"count":2,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":19,
+			"componentType":5126,
+			"count":40,
+			"max":[
+				1.6666666666666667
+			],
+			"min":[
+				0.041666666666666664
+			],
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":20,
+			"componentType":5126,
+			"count":40,
+			"type":"VEC4"
+		},
+		{
+			"bufferView":21,
+			"componentType":5126,
+			"count":2,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":22,
+			"componentType":5126,
+			"count":10,
+			"max":[
+				0.4166666666666667
+			],
+			"min":[
+				0.041666666666666664
+			],
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":23,
+			"componentType":5126,
+			"count":10,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":24,
+			"componentType":5126,
+			"count":2,
+			"max":[
+				0.4166666666666667
+			],
+			"min":[
+				0.041666666666666664
+			],
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":25,
+			"componentType":5126,
+			"count":2,
+			"type":"VEC4"
+		},
+		{
+			"bufferView":26,
+			"componentType":5126,
+			"count":2,
+			"type":"VEC3"
 		}
 	],
 	"bufferViews":[
@@ -396,11 +568,61 @@
 			"byteLength":90624,
 			"byteOffset":399416,
 			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":8,
+			"byteOffset":490040
+		},
+		{
+			"buffer":0,
+			"byteLength":24,
+			"byteOffset":490048
+		},
+		{
+			"buffer":0,
+			"byteLength":160,
+			"byteOffset":490072
+		},
+		{
+			"buffer":0,
+			"byteLength":640,
+			"byteOffset":490232
+		},
+		{
+			"buffer":0,
+			"byteLength":24,
+			"byteOffset":490872
+		},
+		{
+			"buffer":0,
+			"byteLength":40,
+			"byteOffset":490896
+		},
+		{
+			"buffer":0,
+			"byteLength":120,
+			"byteOffset":490936
+		},
+		{
+			"buffer":0,
+			"byteLength":8,
+			"byteOffset":491056
+		},
+		{
+			"buffer":0,
+			"byteLength":32,
+			"byteOffset":491064
+		},
+		{
+			"buffer":0,
+			"byteLength":24,
+			"byteOffset":491096
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":490040,
+			"byteLength":491120,
 			"uri":"FireSlime-1edadb827041e4fe955c49d1a3b7975a.bin"
 		}
 	]
