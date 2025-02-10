@@ -1,10 +1,10 @@
+Camera3D
 MeshInstance3D
 CharacterBody3D
 CollisionShape3D
 Area3D
 DirectionalLight3D
 WorldEnvironment
-Camera3D
 Node
 Node3D
 AudioStreamPlayer
