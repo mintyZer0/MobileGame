@@ -1,0 +1,9 @@
+Color Palette
+
+Dirt Mix:
+Base - #c6a263
+Primary - #ddb56f
+
+Grass:
+Base - c0fb2d
+Primary

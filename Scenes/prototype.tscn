@@ -1,14 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://b75lyaf325ajd"]
+[gd_scene load_steps=10 format=3 uid="uid://b75lyaf325ajd"]
 
 [ext_resource type="PackedScene" uid="uid://dhh1lxdcsxet8" path="res://Characters/player.tscn" id="1_j82ul"]
 [ext_resource type="Script" path="res://Scripts/prototype.gd" id="1_wn8lo"]
 [ext_resource type="Script" path="res://Scripts/level.gd" id="2_si23d"]
-[ext_resource type="PackedScene" uid="uid://dmd6cao2inrvn" path="res://Scenes/left_pos_mod.tscn" id="3_dkltt"]
-[ext_resource type="PackedScene" uid="uid://c07c4udpgdl4m" path="res://Scenes/free_mod_1.tscn" id="4_b6emq"]
-[ext_resource type="PackedScene" uid="uid://cxgjnqp2qkay5" path="res://Scenes/free_mod_2.tscn" id="5_t13n8"]
-[ext_resource type="PackedScene" uid="uid://r7sr40gwr4bg" path="res://Scenes/right_pos_mod.tscn" id="6_geao1"]
-[ext_resource type="PackedScene" uid="uid://p25djxmw6arr" path="res://Scenes/free_mod_3.tscn" id="7_x75oa"]
-[ext_resource type="PackedScene" uid="uid://b83ay7rglp6pp" path="res://Scenes/hud.tscn" id="9_rcgvw"]
+[ext_resource type="PackedScene" uid="uid://upom83lmt387" path="res://Assets/Modules/mod_1.tscn" id="4_1wepn"]
+[ext_resource type="PackedScene" uid="uid://ncu5wbhifl26" path="res://Assets/Modules/mod_2.tscn" id="5_5ntsu"]
+[ext_resource type="PackedScene" uid="uid://dyc1joxwgyshc" path="res://Assets/Modules/Module1.glb" id="6_dyojs"]
+[ext_resource type="PackedScene" path="res://Scenes/hud.tscn" id="9_rcgvw"]
 
 [sub_resource type="Sky" id="Sky_p36qk"]
 
@@ -24,11 +22,11 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.3
 projInterval = 0.01
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, -2.70962e-08, -1.25385e-08, 2.94181e-08, 0.822502, 0.568763, -5.09831e-09, -0.568763, 0.822502, 4.93889e-07, 4.22373, 7.31712)
+transform = Transform3D(1, -2.70962e-08, -1.25385e-08, 2.94181e-08, 0.822502, 0.568763, -5.09831e-09, -0.568763, 0.822502, 2.33434e-07, 1.81111, 4.33786)
 
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("2_si23d")
-modules = Array[PackedScene]([ExtResource("4_b6emq"), ExtResource("5_t13n8"), ExtResource("7_x75oa"), ExtResource("3_dkltt"), ExtResource("6_geao1")])
+modules = Array[PackedScene]([ExtResource("4_1wepn"), ExtResource("5_5ntsu"), ExtResource("6_dyojs")])
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Level"]
 transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 7, 0)
