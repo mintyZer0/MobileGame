@@ -1,12 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://b75lyaf325ajd"]
+[gd_scene load_steps=14 format=3 uid="uid://b75lyaf325ajd"]
 
-[ext_resource type="PackedScene" uid="uid://dhh1lxdcsxet8" path="res://Characters/player.tscn" id="1_j82ul"]
 [ext_resource type="Script" path="res://Scripts/prototype.gd" id="1_wn8lo"]
 [ext_resource type="Script" path="res://Scripts/level.gd" id="2_si23d"]
-[ext_resource type="PackedScene" uid="uid://upom83lmt387" path="res://Assets/Modules/mod_1.tscn" id="4_1wepn"]
-[ext_resource type="PackedScene" uid="uid://ncu5wbhifl26" path="res://Assets/Modules/mod_2.tscn" id="5_5ntsu"]
-[ext_resource type="PackedScene" uid="uid://dyc1joxwgyshc" path="res://Assets/Modules/Module1.glb" id="6_dyojs"]
-[ext_resource type="PackedScene" path="res://Scenes/hud.tscn" id="9_rcgvw"]
+[ext_resource type="PackedScene" uid="uid://dmd6cao2inrvn" path="res://Scenes/left_pos_mod.tscn" id="3_dkltt"]
+[ext_resource type="PackedScene" uid="uid://c07c4udpgdl4m" path="res://Scenes/free_mod_1.tscn" id="4_b6emq"]
+[ext_resource type="PackedScene" uid="uid://cxgjnqp2qkay5" path="res://Scenes/free_mod_2.tscn" id="5_t13n8"]
+[ext_resource type="PackedScene" uid="uid://r7sr40gwr4bg" path="res://Scenes/right_pos_mod.tscn" id="6_geao1"]
+[ext_resource type="PackedScene" uid="uid://p25djxmw6arr" path="res://Scenes/free_mod_3.tscn" id="7_x75oa"]
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="8_htlo7"]
+[ext_resource type="PackedScene" uid="uid://dpak5rnp1tdch" path="res://Characters/slime.tscn" id="9_dfbyh"]
+[ext_resource type="PackedScene" uid="uid://b83ay7rglp6pp" path="res://Scenes/hud.tscn" id="9_rcgvw"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="10_qif38"]
 
 [sub_resource type="Sky" id="Sky_p36qk"]
 
@@ -16,13 +20,6 @@ volumetric_fog_density = 0.03
 
 [node name="Prototype" type="Node3D"]
 script = ExtResource("1_wn8lo")
-
-[node name="Player" parent="." instance=ExtResource("1_j82ul")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.38233, 0)
-projInterval = 0.01
-
-[node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, -2.70962e-08, -1.25385e-08, 2.94181e-08, 0.822502, 0.568763, -5.09831e-09, -0.568763, 0.822502, 2.33434e-07, 1.81111, 4.33786)
 
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("2_si23d")
@@ -34,12 +31,87 @@ transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Level"]
 environment = SubResource("Environment_drowd")
 
-[node name="Player2" parent="." instance=ExtResource("1_j82ul")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.59, 1.382, -1.161)
-projInterval = 1.0
-
-[node name="Player3" parent="." instance=ExtResource("1_j82ul")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.59, 1.382, -1.16075)
-projInterval = 1.0
-
 [node name="Hud" parent="." instance=ExtResource("9_rcgvw")]
+
+[node name="Slime" parent="." instance=ExtResource("9_dfbyh")]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.989665, 1.382, -1.161)
+script = ExtResource("10_qif38")
+projInterval = 0.5
+
+[node name="Slime2" parent="." instance=ExtResource("9_dfbyh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.99, 1.382, -1.161)
+script = ExtResource("10_qif38")
+projInterval = 0.5
+
+[node name="Slime3" parent="." instance=ExtResource("9_dfbyh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.382, 0)
+script = ExtResource("10_qif38")
+projInterval = 0.5
+
+[node name="Camera3D" type="Camera3D" parent="Slime3"]
+transform = Transform3D(1, 0, 0, 0, 0.822144, 0.56928, 0, -0.56928, 0.822144, -8.95915e-07, 2.57098, 4.29455)
+
+[node name="SubViewport" type="SubViewport" parent="."]
+
+[node name="PauseCanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("8_htlo7")
+
+[node name="PauseMenu" type="Control" parent="PauseCanvasLayer"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="PauseCanvasLayer/PauseMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -126.0
+offset_top = -107.0
+offset_right = 126.0
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseCanvasLayer/PauseMenu/PanelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="PauseLabel" type="Label" parent="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "You Paused the Game!"
+horizontal_alignment = 1
+
+[node name="Resume" type="Button" parent="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Resume"
+
+[node name="Restart" type="Button" parent="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Restart"
+
+[node name="Quit" type="Button" parent="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Quit"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseCanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PauseButton" type="Button" parent="PauseCanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Pause"
+
+[connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Resume" to="PauseCanvasLayer" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Restart" to="PauseCanvasLayer" method="_on_restart_pressed"]
+[connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Quit" to="PauseCanvasLayer" method="_on_quit_pressed"]
+[connection signal="pressed" from="PauseCanvasLayer/VBoxContainer/PauseButton" to="PauseCanvasLayer" method="_on_pause_button_pressed"]

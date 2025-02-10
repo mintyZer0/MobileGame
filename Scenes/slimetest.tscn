@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cpva4wk02nqe2"]
+[gd_scene load_steps=5 format=3 uid="uid://cpva4wk02nqe2"]
 
 [ext_resource type="PackedScene" uid="uid://dpak5rnp1tdch" path="res://Characters/slime.tscn" id="1_dfvb6"]
+[ext_resource type="PackedScene" uid="uid://c07c4udpgdl4m" path="res://Scenes/free_mod_1.tscn" id="2_vr8h3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u52sq"]
+size = Vector3(1, 0.998047, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_68lgp"]
 
@@ -13,11 +15,11 @@ transform = Transform3D(1, 0, 0, 0, 0.961045, 0.276392, 0, -0.276392, 0.961045, 
 
 [node name="Slime" parent="." instance=ExtResource("1_dfvb6")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0.0341944, -0.892572)
+modules = Array[PackedScene]([ExtResource("2_vr8h3")])
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 12.8904, 0, -1.50324, 0)
 shape = SubResource("BoxShape3D_u52sq")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
