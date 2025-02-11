@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c7qww5ejo1egg"]
 
-[ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Squidgy Slimes.ttf" id="1_8wxxc"]
+[ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Fonts/Squidgy Slimes.ttf" id="1_8wxxc"]
 [ext_resource type="Script" path="res://Scripts/the_menu.gd" id="1_q7267"]
 [ext_resource type="PackedScene" uid="uid://cgoundoyfxpn8" path="res://Characters/slime_in_menu.tscn" id="2_7ws1x"]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://do7ors3kgd5si"
-path="res://.godot/imported/Squidgy Slimes.ttf-c3be6ce4c6af1704658b1fe4cda4baa1.fontdata"
+path="res://.godot/imported/Squidgy Slimes.ttf-a098920e6af2b368ba2a8c119fde95b7.fontdata"
 
 [deps]
 
-source_file="res://Squidgy Slimes.ttf"
-dest_files=["res://.godot/imported/Squidgy Slimes.ttf-c3be6ce4c6af1704658b1fe4cda4baa1.fontdata"]
+source_file="res://Fonts/Squidgy Slimes.ttf"
+dest_files=["res://.godot/imported/Squidgy Slimes.ttf-a098920e6af2b368ba2a8c119fde95b7.fontdata"]
 
 [params]
 

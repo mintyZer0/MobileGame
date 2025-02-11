@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://drwgqchmaaisi"]
 
 [ext_resource type="PackedScene" uid="uid://br5b7pma7l3nc" path="res://Scenes/volume_slider.tscn" id="2_ash2g"]
-[ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Squidgy Slimes.ttf" id="2_xvlm0"]
+[ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Fonts/Squidgy Slimes.ttf" id="2_xvlm0"]
 
 [sub_resource type="GDScript" id="GDScript_yudnr"]
 script/source = "extends CanvasLayer

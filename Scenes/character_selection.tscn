@@ -1,11 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://bacgjqtl6g1l7"]
 
-[ext_resource type="PackedScene" uid="uid://bsxie3bu0s04p" path="res://Characters/fire_slime.tscn" id="1_chcxy"]
+[ext_resource type="PackedScene" uid="uid://pb78jeuj84gt" path="res://Characters/fire_slime.tscn" id="1_chcxy"]
 [ext_resource type="Script" path="res://Scripts/character_selection.gd" id="1_ey0aa"]
 [ext_resource type="PackedScene" uid="uid://c22dayuenbfui" path="res://Characters/ice_slime.tscn" id="2_cp211"]
 [ext_resource type="PackedScene" uid="uid://c8fielxs15adg" path="res://Characters/neutral_slime.tscn" id="3_n0xpf"]
 [ext_resource type="PackedScene" uid="uid://c4btmkcs0oiia" path="res://Characters/plant_slime.tscn" id="4_ajjsk"]
-[ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Squidgy Slimes.ttf" id="5_ny7dv"]
+[ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Fonts/Squidgy Slimes.ttf" id="5_ny7dv"]
 
 [sub_resource type="Environment" id="Environment_0ubjs"]
 sdfgi_enabled = true
