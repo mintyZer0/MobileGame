@@ -8,7 +8,7 @@ var gameDone :bool
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	while !gameDone:
-		_shoot_fireball()
+		call_deferred("_shoot_fireball")
 		await get_tree().create_timer(projInterval).timeout
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
