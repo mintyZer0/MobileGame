@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5eo6xrdfu3ov"]
+
+[ext_resource type="Script" path="res://Scripts/slime_selection_area.gd" id="1_3c1e5"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p5doc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r01t5"]
+albedo_color = Color(0.486275, 0.988235, 0, 1)
+
+[sub_resource type="TorusMesh" id="TorusMesh_bdjmo"]
+material = SubResource("StandardMaterial3D_r01t5")
+inner_radius = 1.963
+outer_radius = 1.8
+
+[node name="SelectionArea" type="Area3D"]
+transform = Transform3D(-4.39916e-08, 0, 1.00641, 0, 1.00641, 0, -1.00641, 0, -4.39916e-08, 0, 0, 0)
+script = ExtResource("1_3c1e5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2.876, 0, 0, 0, 2.876, 0, 0, 0, 2.876, -0.095, 1, 0)
+shape = SubResource("CapsuleShape3D_p5doc")
+
+[node name="Selection" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("TorusMesh_bdjmo")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

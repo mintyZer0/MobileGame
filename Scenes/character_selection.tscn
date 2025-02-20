@@ -1,10 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://bacgjqtl6g1l7"]
+[gd_scene load_steps=14 format=3 uid="uid://bacgjqtl6g1l7"]
 
-[ext_resource type="PackedScene" uid="uid://pb78jeuj84gt" path="res://Characters/fire_slime.tscn" id="1_chcxy"]
+[ext_resource type="PackedScene" uid="uid://pb78jeuj84gt" path="res://Characters/Character_Select/fire_slime.tscn" id="1_chcxy"]
 [ext_resource type="Script" path="res://Scripts/character_selection.gd" id="1_ey0aa"]
-[ext_resource type="PackedScene" uid="uid://c22dayuenbfui" path="res://Characters/ice_slime.tscn" id="2_cp211"]
-[ext_resource type="PackedScene" uid="uid://c8fielxs15adg" path="res://Characters/neutral_slime.tscn" id="3_n0xpf"]
-[ext_resource type="PackedScene" uid="uid://c4btmkcs0oiia" path="res://Characters/plant_slime.tscn" id="4_ajjsk"]
+[ext_resource type="PackedScene" uid="uid://c22dayuenbfui" path="res://Characters/Character_Select/ice_slime.tscn" id="2_cp211"]
+[ext_resource type="PackedScene" uid="uid://c8fielxs15adg" path="res://Characters/Character_Select/neutral_slime.tscn" id="3_n0xpf"]
+[ext_resource type="PackedScene" uid="uid://c4btmkcs0oiia" path="res://Characters/Character_Select/plant_slime.tscn" id="4_ajjsk"]
 [ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Fonts/Squidgy Slimes.ttf" id="5_ny7dv"]
 
 [sub_resource type="Environment" id="Environment_0ubjs"]
@@ -13,6 +13,9 @@ volumetric_fog_enabled = true
 volumetric_fog_albedo = Color(0.577008, 0.577008, 0.577008, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_c008u"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vsfbi"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bd8hg"]
 bg_color = Color(0.299547, 0.299547, 0.299547, 1)
@@ -53,6 +56,10 @@ expand_margin_right = 10.0
 expand_margin_bottom = 5.0
 shadow_size = 5
 
+[sub_resource type="LabelSettings" id="LabelSettings_58yrw"]
+font = ExtResource("5_ny7dv")
+font_size = 46
+
 [node name="CharacterSelection" type="Node3D"]
 script = ExtResource("1_ey0aa")
 
@@ -62,13 +69,13 @@ script = ExtResource("1_ey0aa")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.71422, 0, 0)
 
 [node name="IceSlime" parent="Characters" instance=ExtResource("2_cp211")]
-transform = Transform3D(-2.81938e-08, 0, -0.645, 0, 0.645, 0, 0.645, 0, -2.81938e-08, 5.47385, 0, 0)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.47385, 0, 0)
 
 [node name="NeutralSlime" parent="Characters" instance=ExtResource("3_n0xpf")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.12778, 0, 0)
 
 [node name="PlantSlime" parent="Characters" instance=ExtResource("4_ajjsk")]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.20554, 0, 0)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.20554, 0, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_0ubjs")
@@ -76,6 +83,11 @@ environment = SubResource("Environment_0ubjs")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 mesh = SubResource("PlaneMesh_c008u")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_vsfbi")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.72733, 0.686288, 0, -0.686288, 0.72733, 0, 6.01388, 10.149)
@@ -99,5 +111,18 @@ text = "Return to Main Menu"
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8577, 7.48657)
+
+[node name="CharacterLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -39.0
+offset_right = 39.0
+offset_bottom = 45.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Name"
+label_settings = SubResource("LabelSettings_58yrw")
 
 [connection signal="pressed" from="GoBackButton" to="." method="_on_go_back_button_pressed"]
