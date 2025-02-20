@@ -22,8 +22,8 @@ func _ready() -> void:
 
 func _on_detector_body_entered(_body: Node3D) -> void:
 	num_effect()
-	if Global.playerVal <= 0:
-		get_tree().quit()
+	#if Global.playerVal <= 0:
+		#get_tree().quit()
 	
 
 # playerVal keeps resetting back to 1 instead of retaining current value
