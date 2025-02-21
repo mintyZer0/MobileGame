@@ -4,13 +4,11 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
-
 @export var selected = false
 @onready var player = $"."
 
 func _ready() -> void:
 	add_to_group("player")
-	pass
 
 func _physics_process(delta: float) -> void:
 	Global.points += 1

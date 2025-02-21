@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://p25djxmw6arr" path="res://Scenes/free_mod_3.tscn" id="7_x75oa"]
 [ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="8_htlo7"]
 [ext_resource type="PackedScene" uid="uid://b83ay7rglp6pp" path="res://Scenes/hud.tscn" id="9_rcgvw"]
-[ext_resource type="PackedScene" uid="uid://dumoia7usu2h8" path="res://Characters/Character_Players/ice_slime_player.tscn" id="12_0vqte"]
+[ext_resource type="PackedScene" uid="uid://bsefgh21r85xb" path="res://Scenes/slime_spawn_markers.tscn" id="11_ngd6o"]
 
 [sub_resource type="Sky" id="Sky_p36qk"]
 
@@ -92,17 +92,7 @@ offset_bottom = 40.0
 layout_mode = 2
 text = "Pause"
 
-[node name="IceSlime" parent="." instance=ExtResource("12_0vqte")]
-transform = Transform3D(-1.09278e-08, 0, -0.25, 0, 0.25, 0, 0.25, 0, -1.09278e-08, 0.989665, 1.382, -1.161)
-
-[node name="IceSlime2" parent="." instance=ExtResource("12_0vqte")]
-transform = Transform3D(-1.09278e-08, 0, -0.25, 0, 0.25, 0, 0.25, 0, -1.09278e-08, -0.99, 1.382, -1.161)
-
-[node name="IceSlime3" parent="." instance=ExtResource("12_0vqte")]
-transform = Transform3D(-1.09278e-08, 0, -0.25, 0, 0.25, 0, 0.25, 0, -1.09278e-08, 0, 1.382, 0)
-
-[node name="Camera3D" type="Camera3D" parent="IceSlime3"]
-transform = Transform3D(3.01992e-07, 2.27712, -3.28858, 0, 3.28858, 2.27712, 4, -1.71918e-07, 2.48281e-07, -12.0683, 8.84263, 7.04756e-09)
+[node name="SlimeSpawnMarkers" parent="." instance=ExtResource("11_ngd6o")]
 
 [connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Resume" to="PauseCanvasLayer" method="_on_resume_pressed"]
 [connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Restart" to="PauseCanvasLayer" method="_on_restart_pressed"]

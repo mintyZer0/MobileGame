@@ -1,5 +1,6 @@
-[gd_scene load_steps=16 format=4 uid="uid://bh2q5mpv67dbl"]
+[gd_scene load_steps=17 format=4 uid="uid://bh2q5mpv67dbl"]
 
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_5hk2p"]
 [ext_resource type="PackedScene" uid="uid://bfbeowvvjym8e" path="res://Scenes/fireball_component.tscn" id="1_75r8y"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60amq"]
@@ -221,7 +222,8 @@ _data = {
 height = 1.26
 
 [node name="PlantSlime" type="CharacterBody3D"]
-transform = Transform3D(1, -0.000148356, 0, 0.000148356, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_5hk2p")
 
 [node name="GrassSlime" type="Node3D" parent="."]
 transform = Transform3D(-1.43919e-06, 5.93426e-05, 0.4, 5.93424e-05, 0.4, -5.93424e-05, -0.4, 5.93422e-05, -1.448e-06, 0, 0, 0)
@@ -245,7 +247,7 @@ autoplay = "forward"
 [node name="Fireball" parent="." instance=ExtResource("1_75r8y")]
 
 [node name="Marker3D" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.40761, 2.44687, 1.48952e-07)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5317e-05, 1.80451, -1.92065)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.845, -1.22964e-11, 0, 1.22964e-11, 0.845, 0, 0, 0, 0.845, 7.9533e-05, 0.536096, 0)

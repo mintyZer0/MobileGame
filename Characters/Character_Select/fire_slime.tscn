@@ -1,4 +1,6 @@
-[gd_scene load_steps=14 format=4 uid="uid://pb78jeuj84gt"]
+[gd_scene load_steps=15 format=4 uid="uid://pb78jeuj84gt"]
+
+[ext_resource type="Script" path="res://Scripts/chracter_select_slime.gd" id="1_np55l"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_86wxb"]
 resource_name = "Body"
@@ -151,6 +153,7 @@ rings = 3
 
 [node name="FireSlime" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00233006, 0, 0.000669122)
+script = ExtResource("1_np55l")
 
 [node name="Body" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58639, 0)
