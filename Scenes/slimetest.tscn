@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cpva4wk02nqe2"]
 
-[ext_resource type="PackedScene" uid="uid://dpak5rnp1tdch" path="res://Characters/slime.tscn" id="1_dfvb6"]
+[ext_resource type="PackedScene" uid="uid://dpak5rnp1tdch" path="res://Characters/Character_Select/slime.tscn" id="1_dfvb6"]
 [ext_resource type="PackedScene" uid="uid://c07c4udpgdl4m" path="res://Scenes/free_mod_1.tscn" id="2_vr8h3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u52sq"]

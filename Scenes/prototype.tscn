@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b75lyaf325ajd"]
+[gd_scene load_steps=13 format=3 uid="uid://b75lyaf325ajd"]
 
 [ext_resource type="Script" path="res://Scripts/prototype.gd" id="1_wn8lo"]
 [ext_resource type="Script" path="res://Scripts/level.gd" id="2_si23d"]
@@ -8,9 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://r7sr40gwr4bg" path="res://Scenes/right_pos_mod.tscn" id="6_geao1"]
 [ext_resource type="PackedScene" uid="uid://p25djxmw6arr" path="res://Scenes/free_mod_3.tscn" id="7_x75oa"]
 [ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="8_htlo7"]
-[ext_resource type="PackedScene" uid="uid://dpak5rnp1tdch" path="res://Characters/slime.tscn" id="9_dfbyh"]
 [ext_resource type="PackedScene" uid="uid://b83ay7rglp6pp" path="res://Scenes/hud.tscn" id="9_rcgvw"]
-[ext_resource type="Script" path="res://Scripts/player.gd" id="10_qif38"]
+[ext_resource type="PackedScene" uid="uid://bsefgh21r85xb" path="res://Scenes/slime_spawn_markers.tscn" id="11_ngd6o"]
 
 [sub_resource type="Sky" id="Sky_p36qk"]
 
@@ -23,7 +22,7 @@ script = ExtResource("1_wn8lo")
 
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("2_si23d")
-modules = Array[PackedScene]([ExtResource("4_1wepn"), ExtResource("5_5ntsu"), ExtResource("6_dyojs")])
+modules = Array[PackedScene]([ExtResource("4_b6emq"), ExtResource("5_t13n8"), ExtResource("7_x75oa"), ExtResource("3_dkltt"), ExtResource("6_geao1")])
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Level"]
 transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 7, 0)
@@ -32,24 +31,6 @@ transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 
 environment = SubResource("Environment_drowd")
 
 [node name="Hud" parent="." instance=ExtResource("9_rcgvw")]
-
-[node name="Slime" parent="." instance=ExtResource("9_dfbyh")]
-transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.989665, 1.382, -1.161)
-script = ExtResource("10_qif38")
-projInterval = 0.5
-
-[node name="Slime2" parent="." instance=ExtResource("9_dfbyh")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.99, 1.382, -1.161)
-script = ExtResource("10_qif38")
-projInterval = 0.5
-
-[node name="Slime3" parent="." instance=ExtResource("9_dfbyh")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.382, 0)
-script = ExtResource("10_qif38")
-projInterval = 0.5
-
-[node name="Camera3D" type="Camera3D" parent="Slime3"]
-transform = Transform3D(1, 0, 0, 0, 0.822144, 0.56928, 0, -0.56928, 0.822144, -8.95915e-07, 2.57098, 4.29455)
 
 [node name="SubViewport" type="SubViewport" parent="."]
 
@@ -110,6 +91,8 @@ offset_bottom = 40.0
 [node name="PauseButton" type="Button" parent="PauseCanvasLayer/VBoxContainer"]
 layout_mode = 2
 text = "Pause"
+
+[node name="SlimeSpawnMarkers" parent="." instance=ExtResource("11_ngd6o")]
 
 [connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Resume" to="PauseCanvasLayer" method="_on_resume_pressed"]
 [connection signal="pressed" from="PauseCanvasLayer/PauseMenu/PanelContainer/VBoxContainer/Restart" to="PauseCanvasLayer" method="_on_restart_pressed"]

@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Global="*res://Scripts/global.gd"
 AudioManager="*res://Audio/audio_manager.tscn"
 InputManager="*res://Scripts/InputManager.gd"
+CharacterSelectData="*res://Scripts/character_select_data.gd"
 
 [dotnet]
 
