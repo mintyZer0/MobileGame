@@ -133,7 +133,7 @@ shadow_mesh = SubResource("ArrayMesh_spmqs")
 [sub_resource type="BoxShape3D" id="BoxShape3D_jl22k"]
 
 [node name="IceSlime" type="CharacterBody3D"]
-transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, 0, 0, 0)
+transform = Transform3D(-1.09278e-08, 0, -0.25, 0, 0.25, 0, 0.25, 0, -1.09278e-08, 0, 0, 0)
 script = ExtResource("1_nscdv")
 
 [node name="IceCube" type="MeshInstance3D" parent="."]

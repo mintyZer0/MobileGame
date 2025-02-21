@@ -19,5 +19,4 @@ func _process(delta: float) -> void:
 func _shoot_fireball():
 	var fireball_node = FIREBALL.instantiate() 
 	get_parent().get_parent().add_child(fireball_node)
-	print(marker_3d)
 	fireball_node.global_position = marker_3d.global_position

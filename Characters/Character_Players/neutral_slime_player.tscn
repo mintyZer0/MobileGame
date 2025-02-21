@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=4 uid="uid://buuqrdy2f2e5k"]
+[gd_scene load_steps=15 format=4 uid="uid://buuqrdy2f2e5k"]
 
 [ext_resource type="PackedScene" uid="uid://bfbeowvvjym8e" path="res://Scenes/fireball_component.tscn" id="1_qexgd"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_xi2mg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aayq6"]
 resource_name = "Material.001"
@@ -164,6 +165,7 @@ height = 1.981
 
 [node name="NeutralSlime" type="CharacterBody3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_xi2mg")
 
 [node name="NeutralSlime" type="Node3D" parent="."]
 
@@ -186,7 +188,7 @@ autoplay = "idle"
 [node name="Fireball" parent="." instance=ExtResource("1_qexgd")]
 
 [node name="Marker3D" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.40761, 2.44687, 1.48952e-07)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8302, 1.16971, 8.00746e-07)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.845, -1.22964e-11, 0, 1.22964e-11, 0.845, 0, 0, 0, 0.845, 0, 0.506, 0)

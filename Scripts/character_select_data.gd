@@ -1,4 +1,4 @@
 extends Node
 
 
-var characters_selected:Array = []
+var characters_selected:Dictionary= {}
