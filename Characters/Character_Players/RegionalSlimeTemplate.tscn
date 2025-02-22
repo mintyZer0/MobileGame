@@ -161,7 +161,7 @@ _data = {
 }
 
 [node name="RegionalSlimeTemplate" type="Node3D"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 0, 0, 0)
 
 [node name="SlimeBody" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.529001, 0, 0, 0, 1, 0, 0.103103, 0.000117331)
