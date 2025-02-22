@@ -227,10 +227,10 @@ _data = {
 }
 
 [node name="PlantSlime" type="Node3D"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+transform = Transform3D(-5.96046e-08, 0, 1, 0, 1, 0, -1, 0, -5.96046e-08, 0, 0, 0)
 
 [node name="SlimeBody" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.636898, 0, 0, 0, 0.843848, 0, 0, 0, 0.648822, 0, 0.987268, 0)
+transform = Transform3D(1.25392, 0, 0, 0, 0.996503, 0, 0, 0, 1.2774, 0, 0.464018, 0)
 mesh = SubResource("ArrayMesh_fsm1h")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_nkhnu")
