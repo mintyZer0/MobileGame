@@ -135,7 +135,7 @@ _data = {
 }
 
 [node name="RockSlime" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0264932, 0)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0264932, 0)
 
 [node name="RockSlime" type="Node3D" parent="."]
 
@@ -147,8 +147,8 @@ bones/0/name = "Bone"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.16415e-10, -0.5, 0)
 bones/0/enabled = true
-bones/0/position = Vector3(0.300142, 0.380327, 0)
-bones/0/rotation = Quaternion(0, 0, 0.921926, 0.387365)
+bones/0/position = Vector3(-0.0520583, -0.480402, 0)
+bones/0/rotation = Quaternion(0, 0, -0.0218824, 0.999761)
 bones/0/scale = Vector3(1, 1, 1)
 
 [node name="Circle" type="MeshInstance3D" parent="RockSlime/Armature/Skeleton3D"]
