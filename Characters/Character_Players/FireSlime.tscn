@@ -167,10 +167,10 @@ height = 2.0
 is_hemisphere = true
 
 [node name="FireSlime" type="Node3D"]
-transform = Transform3D(-1.00202, 0, 8.75994e-08, 0, 1.00202, 0, -8.75994e-08, 0, -1.00202, 0, 0, 0)
+transform = Transform3D(1.00202, 0, 0, 0, 1.00202, 0, 0, 0, 1.00202, 0, 0, 0)
 
 [node name="SlimeBody" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.940199, 0, 0, 0, 1.20332, 0, 0, 0)
+transform = Transform3D(-1, 0, -9.60904e-08, 0, 0.970838, 0, 8.74228e-08, 0, -1.09915, 0, 0, 0)
 mesh = SubResource("ArrayMesh_d5652")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_dw2lc")
