@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://8uklnh24dki3"
-path="res://.godot/imported/IceSlime.blend-13824f73cf2a1c085b65d2af48168c38.scn"
+path="res://.godot/imported/IceSlime.blend-29638a2375d5233ff58a69dca4a88840.scn"
 
 [deps]
 
-source_file="res://Assets/IceSlime.blend"
-dest_files=["res://.godot/imported/IceSlime.blend-13824f73cf2a1c085b65d2af48168c38.scn"]
+source_file="res://Assets/Discarded/IceSlime.blend"
+dest_files=["res://.godot/imported/IceSlime.blend-29638a2375d5233ff58a69dca4a88840.scn"]
 
 [params]
 

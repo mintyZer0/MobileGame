@@ -26,10 +26,6 @@ CharacterSelectData="*res://Scripts/character_select_data.gd"
 
 project/assembly_name="MobileGame"
 
-[filesystem]
-
-import/blender/enabled=false
-
 [input]
 
 pressed={

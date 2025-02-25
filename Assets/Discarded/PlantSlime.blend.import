@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bss1lwwyyqdo6"
-path="res://.godot/imported/PlantSlime.blend-75b668aa7991a737b55f994bd2172afa.scn"
+path="res://.godot/imported/PlantSlime.blend-9334d2cc82c6938973685ce428963390.scn"
 
 [deps]
 
-source_file="res://Assets/PlantSlime.blend"
-dest_files=["res://.godot/imported/PlantSlime.blend-75b668aa7991a737b55f994bd2172afa.scn"]
+source_file="res://Assets/Discarded/PlantSlime.blend"
+dest_files=["res://.godot/imported/PlantSlime.blend-9334d2cc82c6938973685ce428963390.scn"]
 
 [params]
 

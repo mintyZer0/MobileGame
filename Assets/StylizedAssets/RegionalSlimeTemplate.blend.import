@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cdhvqnjebxni2"
-path="res://.godot/imported/RegionalSlimeTemplate.blend-ebdb0f1047215dc2590e7fa5a15d2851.scn"
+path="res://.godot/imported/RegionalSlimeTemplate.blend-f1727f7c798c56be19eb58127705fc5c.scn"
 
 [deps]
 
-source_file="res://Assets/ForestModules/StylizedAssets/RegionalSlimeTemplate.blend"
-dest_files=["res://.godot/imported/RegionalSlimeTemplate.blend-ebdb0f1047215dc2590e7fa5a15d2851.scn"]
+source_file="res://Assets/StylizedAssets/RegionalSlimeTemplate.blend"
+dest_files=["res://.godot/imported/RegionalSlimeTemplate.blend-f1727f7c798c56be19eb58127705fc5c.scn"]
 
 [params]
 

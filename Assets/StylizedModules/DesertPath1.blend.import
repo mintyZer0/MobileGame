@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c4vkxlm67lwyp"
-path="res://.godot/imported/DesertPath1.blend-4d670f6374fb4087244a2070f2738427.scn"
+path="res://.godot/imported/DesertPath1.blend-a332ea73bfcc8f4b209ea4455909c609.scn"
 
 [deps]
 
-source_file="res://Assets/ForestModules/StylizedModules/DesertPath1.blend"
-dest_files=["res://.godot/imported/DesertPath1.blend-4d670f6374fb4087244a2070f2738427.scn"]
+source_file="res://Assets/StylizedModules/DesertPath1.blend"
+dest_files=["res://.godot/imported/DesertPath1.blend-a332ea73bfcc8f4b209ea4455909c609.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://djr2lyk3cg34q"
-path="res://.godot/imported/ForestModules.blend-6922d3c24be21fac7606cc930a7e1e92.scn"
+path="res://.godot/imported/ForestModules.blend-73cbf3b57648760d75f29bc708e196d5.scn"
 
 [deps]
 
-source_file="res://Assets/ForestModules/ForestModules.blend"
-dest_files=["res://.godot/imported/ForestModules.blend-6922d3c24be21fac7606cc930a7e1e92.scn"]
+source_file="res://Assets/Discarded/ForestModules/ForestModules.blend"
+dest_files=["res://.godot/imported/ForestModules.blend-73cbf3b57648760d75f29bc708e196d5.scn"]
 
 [params]
 

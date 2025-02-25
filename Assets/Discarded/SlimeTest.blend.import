@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cmxxnjc7q5b3p"
-path="res://.godot/imported/SlimeTest.blend-50ea6c74c8441920c8c2b62ec22d3180.scn"
+path="res://.godot/imported/SlimeTest.blend-7f82d51f8a7f288616415eb5e7483eaa.scn"
 
 [deps]
 
-source_file="res://Assets/SlimeTest.blend"
-dest_files=["res://.godot/imported/SlimeTest.blend-50ea6c74c8441920c8c2b62ec22d3180.scn"]
+source_file="res://Assets/Discarded/SlimeTest.blend"
+dest_files=["res://.godot/imported/SlimeTest.blend-7f82d51f8a7f288616415eb5e7483eaa.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cy58xwn51d26f"
-path="res://.godot/imported/GrassSlime.blend-1864f26008dadc6295a32a9654ea250e.scn"
+path="res://.godot/imported/GrassSlime.blend-8af948c0e1f3600f3bfea8fa66f3ad49.scn"
 
 [deps]
 
-source_file="res://Assets/GrassSlime.blend"
-dest_files=["res://.godot/imported/GrassSlime.blend-1864f26008dadc6295a32a9654ea250e.scn"]
+source_file="res://Assets/Discarded/GrassSlime.blend"
+dest_files=["res://.godot/imported/GrassSlime.blend-8af948c0e1f3600f3bfea8fa66f3ad49.scn"]
 
 [params]
 

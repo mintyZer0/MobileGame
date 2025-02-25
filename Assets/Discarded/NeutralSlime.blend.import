@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b56pws4vjfm3h"
-path="res://.godot/imported/NeutralSlime.blend-8fdd4bedd764b5cf17dd7c8ae10baa95.scn"
+path="res://.godot/imported/NeutralSlime.blend-d5eb58057c00a8fc7cb2f31c39d00656.scn"
 
 [deps]
 
-source_file="res://Assets/NeutralSlime.blend"
-dest_files=["res://.godot/imported/NeutralSlime.blend-8fdd4bedd764b5cf17dd7c8ae10baa95.scn"]
+source_file="res://Assets/Discarded/NeutralSlime.blend"
+dest_files=["res://.godot/imported/NeutralSlime.blend-d5eb58057c00a8fc7cb2f31c39d00656.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cok7bh35mqnuw"
-path="res://.godot/imported/PlainsPath.blend-cb85a0efc5673ddfe7ba6235d1bbc85a.scn"
+path="res://.godot/imported/PlainsPath.blend-55529006bf20053a79e3e92196f8c6ea.scn"
 
 [deps]
 
-source_file="res://Assets/ForestModules/StylizedModules/PlainsPath.blend"
-dest_files=["res://.godot/imported/PlainsPath.blend-cb85a0efc5673ddfe7ba6235d1bbc85a.scn"]
+source_file="res://Assets/StylizedModules/PlainsPath.blend"
+dest_files=["res://.godot/imported/PlainsPath.blend-55529006bf20053a79e3e92196f8c6ea.scn"]
 
 [params]
 

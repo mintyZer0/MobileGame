@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bg2lpnp8vehal"
-path="res://.godot/imported/FireSlime.blend-1edadb827041e4fe955c49d1a3b7975a.scn"
+path="res://.godot/imported/FireSlime.blend-12292e06db96968e6a27b5279620a0f7.scn"
 
 [deps]
 
-source_file="res://Assets/FireSlime.blend"
-dest_files=["res://.godot/imported/FireSlime.blend-1edadb827041e4fe955c49d1a3b7975a.scn"]
+source_file="res://Assets/Discarded/FireSlime.blend"
+dest_files=["res://.godot/imported/FireSlime.blend-12292e06db96968e6a27b5279620a0f7.scn"]
 
 [params]
 
