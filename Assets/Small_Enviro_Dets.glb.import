@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c6cy2cngr41pw"
+uid="uid://epb1tknh4pn0"
 path="res://.godot/imported/Small_Enviro_Dets.glb-982b91e0943d10b074caf78dbfc1b6ea.scn"
 
 [deps]
@@ -32,5 +32,5 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-gltf/naming_version=1
+gltf/naming_version=0
 gltf/embedded_image_handling=1
