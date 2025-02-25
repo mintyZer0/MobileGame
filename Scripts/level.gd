@@ -7,8 +7,8 @@ var offset = 5
 #Get slime spawn points node
 @onready var spawn_markers = get_node("../SlimeSpawnMarkers").get_children()
 @onready var camera = preload("res://Scenes/player_camera.tscn")
-
-func _ready():
+@onready var enemy_scene = preload("res://Scenes/enemy.tscn")
+func _ready():	
 	print(spawn_markers)
 	for n in range(amount):
 		if n < 10:
@@ -16,9 +16,14 @@ func _ready():
 			continue
 		spawnModule(n*offset)
 	spawn_slimes()
-		
-		
-		
+	spawn_enemy()
+	
+	
+func spawn_enemy():
+	var enemy = enemy_scene.instantiate()
+	enemy.position = Vector3(0, 1.5, 10)
+	add_child(enemy)
+	
 func spawn_slimes():
 	for slime in CharacterSelectData.characters_selected:
 		var slime_name = CharacterSelectData.characters_selected[slime]

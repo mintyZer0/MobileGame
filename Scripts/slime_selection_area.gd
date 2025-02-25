@@ -8,7 +8,7 @@ extends Area3D
 signal character_selected
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#connect signal to character selection screen node function called character_selected
+	#connect signal to characte selection screen node function called character_selected
 	character_selected.connect(character_selection_scene.character_selected)
 	
 

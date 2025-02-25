@@ -10,7 +10,9 @@ material = SubResource("StandardMaterial3D_ynfu2")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dk87g"]
 
-[node name="Fireball" type="Area3D"]
+[node name="FireBall" type="Area3D"]
+collision_layer = 8
+collision_mask = 4
 script = ExtResource("1_wl51g")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -21,4 +23,10 @@ mesh = SubResource("SphereMesh_rywke")
 transform = Transform3D(0.61, 0, 0, 0, 0.61, 0, 0, 0, 0.61, 0, 0, 0)
 shape = SubResource("SphereShape3D_dk87g")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

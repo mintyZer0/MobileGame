@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://cr2tyi8s4yumi"]
+
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_3hvj5"]
+[ext_resource type="PackedScene" uid="uid://dh8qj3huwypyw" path="res://Scenes/health_component.tscn" id="2_g88xc"]
+[ext_resource type="PackedScene" uid="uid://r4wi7vodhkpq" path="res://Scenes/hitbox_component.tscn" id="3_3hny8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_siiqe"]
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_r2yoi"]
+material = SubResource("StandardMaterial3D_siiqe")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_lhiy3"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0gji7"]
+
+[node name="Enemy" type="CharacterBody3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_3hvj5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_r2yoi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_lhiy3")
+
+[node name="HealthComponent" parent="." instance=ExtResource("2_g88xc")]
+
+[node name="HitboxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("3_3hny8")]
+collision_layer = 4
+collision_mask = 8
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="HitboxComponent"]
+shape = SubResource("SphereShape3D_0gji7")
+
+[node name="Marker3D" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00553, -2.32487)
