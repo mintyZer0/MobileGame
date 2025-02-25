@@ -30,14 +30,14 @@ func spawn_slimes():
 		match slime:
 			"MiddleSlime":
 				slime_instance.global_position = spawn_markers[0].global_position
-				slime_instance.global_rotation_degrees = Vector3(0,-90,0)
-				add_camera(slime_instance)
+				
+				add_camera(slime_instance.get_child(0))
 			"LeftSlime":
 				slime_instance.global_position = spawn_markers[1].global_position
-				slime_instance.global_rotation_degrees = Vector3(0,-90,0)
+
 			"RightSlime":
 				slime_instance.global_position = spawn_markers[2].global_position
-				slime_instance.global_rotation_degrees = Vector3(0,-90,0)
+
 				
 func add_camera(player):
 	var camera_instance = camera.instantiate()
@@ -46,12 +46,14 @@ func add_camera(player):
 #Spawns empty module in the beginning so that you dont die immediately
 func spawnEmptyModule(n):
 	var empty_module = modules[0].instantiate()
-	empty_module.position.z = abs(-n)
+	empty_module.position.z = n
+	empty_module.position.z = -empty_module.position.z
 	add_child(empty_module)
 
 func spawnModule(n):
 	rng.randomize()
 	var num = rng.randi_range(0, modules.size()-1)
 	var instance = modules[num].instantiate()
-	instance.position.z = abs(-n)
+	instance.position.z = n
+	instance.position.z = -instance.position.z
 	add_child(instance)
