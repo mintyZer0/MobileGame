@@ -2,7 +2,7 @@ extends Area3D
 
 @export var speed = 10
 @export var damage = 200
-@onready var dir = get_tree().get_first_node_in_group("player").global_transform.basis.x.normalized()
+@onready var dir = +get_tree().get_first_node_in_group("player").global_transform.basis.z.normalized()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
