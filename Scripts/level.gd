@@ -35,14 +35,14 @@ func spawn_slimes():
 		match slime:
 			"MiddleSlime":
 				slime_instance.global_position = spawn_markers[0].global_position
-				slime_instance.global_rotation = spawn_markers[0].global_rotation
+				slime_instance.global_rotation_degrees = Vector3(0,-90,0)
 				add_camera(slime_instance)
 			"LeftSlime":
 				slime_instance.global_position = spawn_markers[1].global_position
-				slime_instance.global_rotation = spawn_markers[1].global_rotation
+				slime_instance.global_rotation_degrees = Vector3(0,-90,0)
 			"RightSlime":
 				slime_instance.global_position = spawn_markers[2].global_position
-				slime_instance.global_rotation = spawn_markers[2].global_rotation
+				slime_instance.global_rotation_degrees = Vector3(0,-90,0)
 				
 func add_camera(player):
 	var camera_instance = camera.instantiate()
