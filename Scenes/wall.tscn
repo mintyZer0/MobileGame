@@ -94,13 +94,13 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_k8lsu")
 
 [node name="Debuff" type="MeshInstance3D" parent="Detector"]
-transform = Transform3D(0.999446, 0, 0, 0, 0.999446, 0, 0, 0, 0.999446, 0.999478, 2.00298, 0.112397)
+transform = Transform3D(0.999446, 0, 0, 0, 0.999446, 0, 0, 0, 0.999446, 0.995113, 2.00298, 0.112397)
 mesh = SubResource("ArrayMesh_ordl0")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_amc12")
 
 [node name="WallText" type="Label3D" parent="."]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2.47303, 1.95048, 0.835407)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47303, 1.95048, 1.09413)
 text = "SOMETHING"
 font_size = 100
 outline_size = 30
