@@ -1,4 +1,4 @@
-[gd_scene load_steps=129 format=4 uid="uid://chhb6n7a04flx"]
+[gd_scene load_steps=132 format=4 uid="uid://chhb6n7a04flx"]
 
 [ext_resource type="Texture2D" uid="uid://b2u4uox84jk0x" path="res://Assets/StylizedModules/PlainsPath_Grass.png" id="1_35fm1"]
 
@@ -39,6 +39,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_arq3y")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_r2cke"]
+size = Vector3(1.99927, 0.1427, 1.979)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_faq34"]
 resource_name = "Grass"
 cull_mode = 2
@@ -77,6 +80,12 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_3flqo")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x7y6o"]
+size = Vector3(2, 10, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_426jd"]
+size = Vector3(2, 10, 2)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_atbyb"]
 resource_name = "Kusa"
@@ -2005,16 +2014,36 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s0v7y")
 
 [node name="PlainsMod1" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="Path" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
 mesh = SubResource("ArrayMesh_feu62")
 skeleton = NodePath("")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Path"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Path/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00378418, -0.0653711, -0.00122071)
+shape = SubResource("BoxShape3D_r2cke")
+
 [node name="Sides" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 0.21, 0, 0, 0, 1, 0, 0.157383, 3)
 mesh = SubResource("ArrayMesh_lpgsx")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sides"]
+
+[node name="Side" type="CollisionShape3D" parent="Sides/StaticBody3D"]
+transform = Transform3D(0.999998, 0, 3.90799e-14, 0, 1, 0, -1.56319e-13, 0, 0.999998, 0, 3.97059, 0)
+shape = SubResource("BoxShape3D_x7y6o")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Sides"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 2.84217e-14, 0, 1, 3.20032e-07, 0, -5.96603)
+
+[node name="Side" type="CollisionShape3D" parent="Sides/StaticBody3D2"]
+transform = Transform3D(1, 0, 3.01981e-14, 0, 1, 0, -1.20792e-13, 0, 1, -7.62611e-10, 3.94743, -0.034893)
+shape = SubResource("BoxShape3D_426jd")
 
 [node name="Kusa" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 0.109066, 0, -0.109066, 0, 0, 0, 0, 0.0218132, -1.81731, 0.159197, 2.17376)
