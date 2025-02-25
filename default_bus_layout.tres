@@ -1,4 +1,4 @@
 [gd_resource type="AudioBusLayout" format=3 uid="uid://b88u1ipmt476v"]
 
 [resource]
-bus/0/send = &"Music"
+bus/0/mute = true
