@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfwb0hw2rae1n"
-path.s3tc="res://.godot/imported/Untitled.png-3c0dc7f0ef6a69cae8c6ad29dca05429.s3tc.ctex"
+path.s3tc="res://.godot/imported/Untitled.png-119c2f0c33fa4eba664f55c5836814ec.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/MapTiles/MapTiles_Latest/textures/Untitled.png"
-dest_files=["res://.godot/imported/Untitled.png-3c0dc7f0ef6a69cae8c6ad29dca05429.s3tc.ctex"]
+source_file="res://Assets/MapTiles/MapTiles_Latest/Textures/Untitled.png"
+dest_files=["res://.godot/imported/Untitled.png-119c2f0c33fa4eba664f55c5836814ec.s3tc.ctex"]
 
 [params]
 
