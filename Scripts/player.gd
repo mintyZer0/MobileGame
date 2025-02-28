@@ -1,11 +1,15 @@
 extends CharacterBody3D
 
-
-
 const SPEED = 5.0
+const SENSITIVITY = 4.0
 const JUMP_VELOCITY = 4.5
 @export var selected = false
 @onready var player = $"."
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventScreenDrag:
+		handle_screen_drag(event)
+	
 
 func _ready() -> void:
 	add_to_group("player")
@@ -33,3 +37,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 	move_and_slide()
+
+func handle_screen_drag(event):
+	print(event.relative)
+	var direction = event.relative
+	velocity.x = direction.x * SENSITIVITY

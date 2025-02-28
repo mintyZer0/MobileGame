@@ -9,7 +9,6 @@ var offset = 5
 @onready var camera = preload("res://Scenes/player_camera.tscn")
 
 func _ready():
-	print(spawn_markers)
 	for n in range(amount):
 		if n < 10:
 			spawnEmptyModule(n*offset)
