@@ -22,6 +22,14 @@ AudioManager="*res://Audio/audio_manager.tscn"
 InputManager="*res://Scripts/InputManager.gd"
 CharacterSelectData="*res://Scripts/character_select_data.gd"
 
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
 [dotnet]
 
 project/assembly_name="MobileGame"
