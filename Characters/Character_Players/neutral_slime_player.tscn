@@ -163,33 +163,35 @@ _data = {
 radius = 0.908
 height = 1.981
 
-[node name="NeutralSlime" type="CharacterBody3D"]
-transform = Transform3D(-2.14186e-08, 0, -0.49, 0, 0.49, 0, 0.49, 0, -2.14186e-08, 0, 0, 0)
+[node name="NeutralSlime" type="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="NeutralSlime" type="CharacterBody3D" parent="."]
 script = ExtResource("1_xi2mg")
 
-[node name="NeutralSlime" type="Node3D" parent="."]
-
 [node name="SlimeBody" type="MeshInstance3D" parent="NeutralSlime"]
-transform = Transform3D(1, 0, 0, 0, 0.949297, 0, 0, 0, 1, 0, 0.392961, 0)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 0.949297, 0, 1, 0, -4.37114e-08, 0, 0.392961, 0)
 mesh = SubResource("ArrayMesh_liruc")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_5t208")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="NeutralSlime/SlimeBody"]
+transform = Transform3D(0.999948, 0, -0.01021, 0, 1, 0, 0.01021, 0, 0.999948, 0, 0, 0)
 mesh = SubResource("ArrayMesh_i2f3g")
 surface_material_override/0 = SubResource("StandardMaterial3D_cc04e")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NeutralSlime"]
+root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_03j3d")
 }
 autoplay = "idle"
 
-[node name="Fireball" parent="." instance=ExtResource("1_qexgd")]
+[node name="Fireball" parent="NeutralSlime" instance=ExtResource("1_qexgd")]
 
-[node name="Marker3D" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8302, 1.16971, 8.00746e-07)
+[node name="Marker3D" type="Marker3D" parent="NeutralSlime"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0543101, 1.16971, 2.34931)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.845, -1.22964e-11, 0, 1.22964e-11, 0.845, 0, 0, 0, 0.845, 0, 0.506, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NeutralSlime"]
+transform = Transform3D(0.845, -1.22964e-11, 0, 1.22964e-11, 0.845, 0, 0, 0, 0.845, 0, 0.625026, 0)
 shape = SubResource("CapsuleShape3D_25l5m")

@@ -38,7 +38,6 @@ func add_character():
 		elif characters_selected.size() == 2:
 			characters_selected["RightSlime"] = slime_name
 		$Selection.show()
-		print(characters_selected)
 
 func remove_character():
 	#remove character is slime_name already in dict
@@ -46,5 +45,3 @@ func remove_character():
 		if characters_selected[key] == slime_name:
 			characters_selected.erase(key)
 	$Selection.hide()
-	print(slime.name)
-	print(characters_selected)
