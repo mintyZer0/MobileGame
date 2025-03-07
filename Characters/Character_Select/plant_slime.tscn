@@ -222,8 +222,8 @@ tracks/1/keys = PackedFloat32Array(0, 1, 1.25392, 0.996503, 1.2774, 0.0333333, 1
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lcr0t"]
 _data = {
-"Idle": SubResource("Animation_ec0us"),
-"Walking": SubResource("Animation_ech7m")
+&"Idle": SubResource("Animation_ec0us"),
+&"Walking": SubResource("Animation_ech7m")
 }
 
 [node name="PlantSlime" type="Node3D"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=4 uid="uid://bh2q5mpv67dbl"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_r5ljn"]
+[ext_resource type="Script" uid="uid://c76lyddvb3x0t" path="res://Scripts/player.gd" id="1_r5ljn"]
 [ext_resource type="Texture2D" uid="uid://cuerrvkaffp6j" path="res://Assets/SlimeReworks/PlantSlime_Eyes.png" id="1_rppvt"]
 [ext_resource type="PackedScene" uid="uid://bfbeowvvjym8e" path="res://Scenes/fireball_component.tscn" id="2_p1kia"]
 
@@ -219,8 +219,8 @@ tracks/1/keys = PackedFloat32Array(0, 1, 1.25392, 0.996503, 1.2774, 0.0333333, 1
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6t4ff"]
 _data = {
-"Idle": SubResource("Animation_evwte"),
-"Walking": SubResource("Animation_bjhnn")
+&"Idle": SubResource("Animation_evwte"),
+&"Walking": SubResource("Animation_bjhnn")
 }
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7c41v"]

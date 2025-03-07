@@ -146,8 +146,8 @@ tracks/0/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.0333333, 1, 1, 0.99884, 1.00
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_odtks"]
 _data = {
-"Idle": SubResource("Animation_27k36"),
-"Walking": SubResource("Animation_4vug6")
+&"Idle": SubResource("Animation_27k36"),
+&"Walking": SubResource("Animation_4vug6")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_coodx"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dg6gf3bs8ofmw"]
 
-[ext_resource type="Script" path="res://Scripts/audio_manager.gd" id="1_vel8d"]
+[ext_resource type="Script" uid="uid://pa5wmjlulmuj" path="res://Scripts/audio_manager.gd" id="1_vel8d"]
 [ext_resource type="AudioStream" uid="uid://c3qdq66qnyfhy" path="res://Audio/Music/LEASE.mp3" id="2_f17vr"]
 
 [node name="AudioManager" type="Node"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bfbeowvvjym8e"]
 
-[ext_resource type="Script" path="res://Scripts/shoot_fireball.gd" id="1_dkbdl"]
+[ext_resource type="Script" uid="uid://c3tymt61vsq02" path="res://Scripts/shoot_fireball.gd" id="1_dkbdl"]
 
 [node name="Fireball" type="Node3D"]
 script = ExtResource("1_dkbdl")

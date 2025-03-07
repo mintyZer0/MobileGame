@@ -184,8 +184,8 @@ tracks/1/keys = PackedFloat32Array(0, 1, 1, 0.995814, 1, 0.0333333, 1, 1, 0.9874
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g6vky"]
 _data = {
-"Idle": SubResource("Animation_urutg"),
-"Walking": SubResource("Animation_xe88j")
+&"Idle": SubResource("Animation_urutg"),
+&"Walking": SubResource("Animation_xe88j")
 }
 
 [node name="RedMushroomSlime" type="Node3D"]
