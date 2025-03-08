@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=4 uid="uid://r7sr40gwr4bg"]
 
-[ext_resource type="Script" uid="uid://fehnmpm6hkch" path="res://Scripts/module.gd" id="1_1eqbd"]
+[ext_resource type="Script" uid="uid://dbvwd510hlqou" path="res://Scripts/module.gd" id="1_1eqbd"]
 [ext_resource type="PackedScene" uid="uid://bujtnql87nene" path="res://Scenes/wall.tscn" id="2_i02y3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_axl04"]

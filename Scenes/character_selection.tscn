@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://bacgjqtl6g1l7"]
 
 [ext_resource type="PackedScene" uid="uid://pb78jeuj84gt" path="res://Characters/Character_Select/fire_slime.tscn" id="1_chcxy"]
-[ext_resource type="Script" uid="uid://do8jnletv5adr" path="res://Scripts/character_selection.gd" id="1_ey0aa"]
+[ext_resource type="Script" uid="uid://bmmw64qmwcbey" path="res://Scripts/character_selection.gd" id="1_ey0aa"]
 [ext_resource type="PackedScene" uid="uid://c22dayuenbfui" path="res://Characters/Character_Select/ice_slime.tscn" id="2_cp211"]
 [ext_resource type="PackedScene" uid="uid://c8fielxs15adg" path="res://Characters/Character_Select/neutral_slime.tscn" id="3_n0xpf"]
 [ext_resource type="PackedScene" uid="uid://c4btmkcs0oiia" path="res://Characters/Character_Select/plant_slime.tscn" id="4_ajjsk"]

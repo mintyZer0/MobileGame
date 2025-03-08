@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c5eo6xrdfu3ov"]
 
-[ext_resource type="Script" uid="uid://kv2l5vj5m0nk" path="res://Scripts/slime_selection_area.gd" id="1_3c1e5"]
+[ext_resource type="Script" uid="uid://bg78l57tjxmbl" path="res://Scripts/slime_selection_area.gd" id="1_3c1e5"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p5doc"]
 

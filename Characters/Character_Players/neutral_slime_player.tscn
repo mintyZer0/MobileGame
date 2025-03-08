@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=4 uid="uid://buuqrdy2f2e5k"]
 
 [ext_resource type="PackedScene" uid="uid://bfbeowvvjym8e" path="res://Scenes/fireball_component.tscn" id="1_qexgd"]
-[ext_resource type="Script" uid="uid://c76lyddvb3x0t" path="res://Scripts/player.gd" id="1_xi2mg"]
+[ext_resource type="Script" uid="uid://brh6iigwkdqcn" path="res://Scripts/player.gd" id="1_xi2mg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aayq6"]
 resource_name = "Material.001"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=4 uid="uid://0lo1b8ebmmps"]
 
-[ext_resource type="Script" uid="uid://c76lyddvb3x0t" path="res://Scripts/player.gd" id="1_3rnjb"]
+[ext_resource type="Script" uid="uid://brh6iigwkdqcn" path="res://Scripts/player.gd" id="1_3rnjb"]
 [ext_resource type="Shader" uid="uid://d3moh6uebiejd" path="res://Characters/Character_Players/fire_shader.tres" id="1_amjnh"]
 [ext_resource type="PackedScene" uid="uid://bfbeowvvjym8e" path="res://Scenes/fireball_component.tscn" id="2_5qflh"]
 

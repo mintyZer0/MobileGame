@@ -3,13 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dwjw4lc6lajoy"
-path="res://.godot/imported/Tree_temp_climate_018.FBX-9525102b0ceb920d78d8ec90314204d5.scn"
+uid="uid://bcjjm3ns8sixt"
+valid=false
 
 [deps]
 
 source_file="res://Assets/MapTiles/MapTiles_Latest/Fbx/Tree_temp_climate_018.FBX"
-dest_files=["res://.godot/imported/Tree_temp_climate_018.FBX-9525102b0ceb920d78d8ec90314204d5.scn"]
 
 [params]
 
@@ -33,6 +32,6 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-fbx/importer=0
+fbx/importer=1
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1
