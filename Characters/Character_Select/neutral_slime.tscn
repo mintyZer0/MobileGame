@@ -152,8 +152,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_03j3d"]
 _data = {
-"RESET": SubResource("Animation_royy7"),
-"idle": SubResource("Animation_0f2k0")
+&"RESET": SubResource("Animation_royy7"),
+&"idle": SubResource("Animation_0f2k0")
 }
 
 [node name="NeutralSlime" type="Node3D"]

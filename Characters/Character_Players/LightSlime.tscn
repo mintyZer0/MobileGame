@@ -232,7 +232,7 @@ tracks/4/keys = PackedFloat32Array(0, 1, -0.747179, 1.63261, 0, 0.0333333, 1, -0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xlnxr"]
 _data = {
-"Idle": SubResource("Animation_trq3q")
+&"Idle": SubResource("Animation_trq3q")
 }
 
 [node name="LightSlime" type="Node3D"]

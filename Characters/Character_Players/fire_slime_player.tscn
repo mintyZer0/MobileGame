@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=4 uid="uid://0lo1b8ebmmps"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_3rnjb"]
+[ext_resource type="Script" uid="uid://brh6iigwkdqcn" path="res://Scripts/player.gd" id="1_3rnjb"]
 [ext_resource type="Shader" uid="uid://d3moh6uebiejd" path="res://Characters/Character_Players/fire_shader.tres" id="1_amjnh"]
 [ext_resource type="PackedScene" uid="uid://bfbeowvvjym8e" path="res://Scenes/fireball_component.tscn" id="2_5qflh"]
 
@@ -147,8 +147,8 @@ tracks/0/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.0333333, 1, 1, 0.99884, 1.00
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8nwa5"]
 _data = {
-"Idle": SubResource("Animation_4mo2x"),
-"Walking": SubResource("Animation_xhryd")
+&"Idle": SubResource("Animation_4mo2x"),
+&"Walking": SubResource("Animation_xhryd")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vr8jf"]

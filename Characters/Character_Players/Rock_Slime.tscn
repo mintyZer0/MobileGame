@@ -131,7 +131,7 @@ tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, -0.0218824, 0.999761, 0.0333333, 
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1x0dp"]
 _data = {
-"Moving": SubResource("Animation_gh475")
+&"Moving": SubResource("Animation_gh475")
 }
 
 [node name="RockSlime" type="Node3D"]

@@ -798,9 +798,9 @@ tracks/29/keys = PackedFloat32Array(0, 1, -0.018064, -0.00495879, 0.0152473, 0.9
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e223f"]
 _data = {
-"Action": SubResource("Animation_nsogs"),
-"Idle": SubResource("Animation_ki5kq"),
-"Walking": SubResource("Animation_rher2")
+&"Action": SubResource("Animation_nsogs"),
+&"Idle": SubResource("Animation_ki5kq"),
+&"Walking": SubResource("Animation_rher2")
 }
 
 [node name="WaterSlime" type="Node3D"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cgoundoyfxpn8"]
 
-[ext_resource type="Script" path="res://Scripts/slime_in_menu.gd" id="1_mc5jc"]
+[ext_resource type="Script" uid="uid://cf7ancxxi7o3y" path="res://Scripts/slime_in_menu.gd" id="1_mc5jc"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5sqnv"]
 

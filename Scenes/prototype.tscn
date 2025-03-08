@@ -1,13 +1,13 @@
 [gd_scene load_steps=13 format=3 uid="uid://b75lyaf325ajd"]
 
-[ext_resource type="Script" path="res://Scripts/prototype.gd" id="1_wn8lo"]
-[ext_resource type="Script" path="res://Scripts/level.gd" id="2_si23d"]
+[ext_resource type="Script" uid="uid://deeqpfmivpjg7" path="res://Scripts/prototype.gd" id="1_wn8lo"]
+[ext_resource type="Script" uid="uid://dfghbkl0fobi2" path="res://Scripts/level.gd" id="2_si23d"]
 [ext_resource type="PackedScene" uid="uid://dmd6cao2inrvn" path="res://Scenes/left_pos_mod.tscn" id="3_dkltt"]
 [ext_resource type="PackedScene" uid="uid://c07c4udpgdl4m" path="res://Scenes/free_mod_1.tscn" id="4_b6emq"]
 [ext_resource type="PackedScene" uid="uid://cxgjnqp2qkay5" path="res://Scenes/free_mod_2.tscn" id="5_t13n8"]
 [ext_resource type="PackedScene" uid="uid://r7sr40gwr4bg" path="res://Scenes/right_pos_mod.tscn" id="6_geao1"]
 [ext_resource type="PackedScene" uid="uid://p25djxmw6arr" path="res://Scenes/free_mod_3.tscn" id="7_x75oa"]
-[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="8_htlo7"]
+[ext_resource type="Script" uid="uid://c14xssf1yxpv4" path="res://Scripts/pause_menu.gd" id="8_htlo7"]
 [ext_resource type="PackedScene" uid="uid://b83ay7rglp6pp" path="res://Scenes/hud.tscn" id="9_rcgvw"]
 [ext_resource type="PackedScene" uid="uid://bsefgh21r85xb" path="res://Scenes/slime_spawn_markers.tscn" id="11_ngd6o"]
 

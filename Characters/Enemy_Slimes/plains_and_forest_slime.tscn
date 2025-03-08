@@ -141,8 +141,8 @@ tracks/1/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.0333333, 1, 1, 0.987067, 1, 
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lfesa"]
 _data = {
-"Idle": SubResource("Animation_ordve"),
-"Walking": SubResource("Animation_6ynf2")
+&"Idle": SubResource("Animation_ordve"),
+&"Walking": SubResource("Animation_6ynf2")
 }
 
 [node name="PlainsAndForestSlime" type="Node3D"]

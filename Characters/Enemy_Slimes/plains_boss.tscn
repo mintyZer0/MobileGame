@@ -1133,9 +1133,9 @@ tracks/31/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vw8nq"]
 _data = {
-"Attack": SubResource("Animation_g34os"),
-"Idle": SubResource("Animation_aiiat"),
-"RESET": SubResource("Animation_5cbwj")
+&"Attack": SubResource("Animation_g34os"),
+&"Idle": SubResource("Animation_aiiat"),
+&"RESET": SubResource("Animation_5cbwj")
 }
 
 [node name="PlainsBoss" type="Node3D"]

@@ -221,8 +221,8 @@ tracks/1/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.0333333, 1, 1, 0.992787, 1, 
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_daad5"]
 _data = {
-"Idle": SubResource("Animation_vojjp"),
-"Walking": SubResource("Animation_b4rku")
+&"Idle": SubResource("Animation_vojjp"),
+&"Walking": SubResource("Animation_b4rku")
 }
 
 [node name="CactusSlime" type="Node3D"]
