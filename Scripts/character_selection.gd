@@ -25,6 +25,7 @@ func _on_go_back_button_pressed() -> void:
 
 #Determine if swipe is left or right then handle swipe direction using function
 func _on_single_drag(event):
+	print(event.strength)
 	var direction = event.relative
 	if abs(direction.x) > abs(direction.y):
 		if direction.x > 0:

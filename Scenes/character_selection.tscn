@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bacgjqtl6g1l7"]
+[gd_scene load_steps=15 format=3 uid="uid://bacgjqtl6g1l7"]
 
 [ext_resource type="PackedScene" uid="uid://pb78jeuj84gt" path="res://Characters/Character_Select/fire_slime.tscn" id="1_chcxy"]
 [ext_resource type="Script" uid="uid://bmmw64qmwcbey" path="res://Scripts/character_selection.gd" id="1_ey0aa"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c8fielxs15adg" path="res://Characters/Character_Select/neutral_slime.tscn" id="3_n0xpf"]
 [ext_resource type="PackedScene" uid="uid://c4btmkcs0oiia" path="res://Characters/Character_Select/plant_slime.tscn" id="4_ajjsk"]
 [ext_resource type="FontFile" uid="uid://do7ors3kgd5si" path="res://Fonts/Squidgy Slimes.ttf" id="5_ny7dv"]
+[ext_resource type="PackedScene" uid="uid://m2prt4bsntht" path="res://Characters/Character_Select/dark_slime.tscn" id="7_qyt44"]
 
 [sub_resource type="Environment" id="Environment_0ubjs"]
 sdfgi_enabled = true
@@ -76,6 +77,9 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.1277
 
 [node name="PlantSlime" parent="Characters" instance=ExtResource("4_ajjsk")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.20554, 0, 0)
+
+[node name="DarkSlime" parent="Characters" instance=ExtResource("7_qyt44")]
+transform = Transform3D(0.0507324, 0, -0.998712, 0, 1, 0, 0.998712, 0, 0.0507324, -8.08499, 0.308637, 1.06838)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_0ubjs")

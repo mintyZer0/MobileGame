@@ -931,6 +931,6 @@ skin = SubResource("Skin_sdrf5")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WaterSlime"]
 libraries = {
-"": SubResource("AnimationLibrary_e223f")
+&"": SubResource("AnimationLibrary_e223f")
 }
 autoplay = "Idle"

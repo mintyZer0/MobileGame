@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://bh2q5mpv67dbl"]
+[gd_scene load_steps=17 format=4 uid="uid://bh2q5mpv67dbl"]
 
 [ext_resource type="Script" uid="uid://brh6iigwkdqcn" path="res://Scripts/player.gd" id="1_r5ljn"]
 [ext_resource type="Texture2D" uid="uid://cuerrvkaffp6j" path="res://Assets/SlimeReworks/PlantSlime_Eyes.png" id="1_rppvt"]
